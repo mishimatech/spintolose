@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>THE LILA DISPATCH // Game Designer Written Assessment — Ryan Joshy</title>
+  <title>LILA GAMES WRITTEN TEST // Ryan Joshy</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=block');
@@ -38,7 +38,6 @@
 
     .sharp-corners { border-radius: 0px !important; }
 
-    /* Fine Graph-Paper Section Overlay */
     .newsprint-texture {
       position: relative;
     }
@@ -54,13 +53,11 @@
       opacity: 0.55;
     }
 
-    /* Halftone Dot Pattern for Wireframe Placeholders */
     .halftone-bg {
       background-image: radial-gradient(#111111 1px, transparent 1px);
       background-size: 16px 16px;
     }
 
-    /* Hard Offset Cutout Lift Effect */
     .hard-shadow-hover {
       transition: transform 0.2s ease-out, box-shadow 0.2s ease-out, background-color 0.2s ease-out;
     }
@@ -69,7 +66,6 @@
       transform: translate(-2px, -2px);
     }
 
-    /* Drop Cap Utility */
     .drop-cap::first-letter {
       float: left;
       font-family: 'Playfair Display', serif;
@@ -82,7 +78,6 @@
       color: #CC0000;
     }
 
-    /* Breaking News / Telemetry Marquee Ticker */
     .ticker-wrap {
       width: 100%;
       overflow: hidden;
@@ -104,7 +99,6 @@
       100% { transform: translate3d(-100%, 0, 0); }
     }
 
-    /* Section Visibility Modes */
     .edition-section {
       display: none;
     }
@@ -113,7 +107,6 @@
       display: block;
     }
 
-    /* Wireframe Cross Box */
     .wf-cross-box {
       background:
         linear-gradient(to top right, transparent calc(50% - 1px), #111111, transparent calc(50% + 1px)),
@@ -124,80 +117,78 @@
 </head>
 <body class="selection:bg-[#CC0000] selection:text-white">
 
-  <!-- Native Audio Element ("It's Going Down Now.mp3") -->
+  <!-- Local MP3 Audio ("It's Going Down Now.mp3") -->
   <audio id="local-mp3-audio" src="It's Going Down Now.mp3" preload="auto" loop></audio>
 
   <!-- =========================================================
-       1. TOP BREAKING TELEMETRY MARQUEE TICKER
+       1. TOP MARQUEE TICKER
        ========================================================= -->
   <div class="ticker-wrap py-2">
     <div class="ticker-track font-mono text-xs uppercase tracking-widest">
-      <span class="bg-[#CC0000] text-white px-2 py-0.5 font-bold mr-3">SPECIAL ASSESSMENT EDITION</span>
-      <span>CANDIDATE: RYAN JOSHY // ROLE: GAME DESIGNER (LILA GAMES WRITTEN TEST PART 1)</span>
+      <span class="bg-[#CC0000] text-white px-2 py-0.5 font-bold mr-3">LILA GAMES WRITTEN TEST</span>
+      <span>APPLICANT: RYAN JOSHY // PART 1 SUBMISSION</span>
       <span class="mx-6 text-neutral-400">|</span>
-      <span class="bg-[#CC0000] text-white px-2 py-0.5 font-bold mr-3">Q1 PLAYABLE PROTOTYPE</span>
-      <span>"SPIN TO LOSE" — UNITY URP 3D WEBGL BUILD (LOSE THE JACKPOT, UNLOCK 6 SHACKLES, ESCAPE THE CHAIR)</span>
+      <span class="bg-[#CC0000] text-white px-2 py-0.5 font-bold mr-3">QUESTION #1</span>
+      <span>"SPIN TO LOSE" — UNITY URP 3D WEBGL PROTOTYPE (PULL LEVER 6 TIMES WITHOUT HITTING THE JACKPOT TO UNLOCK SHACKLES)</span>
       <span class="mx-6 text-neutral-400">|</span>
-      <span class="text-[#CC0000] font-bold">SOFT LAUNCH NSM TARGETS:</span>
-      <span>D1 RETENTION &gt; 40% // AVG CORE LOOP ACTIONS: 8+ PER DAY // HARD LAUNCH D7 ROAS &gt; 20% // ORGANIC ARPDAU: $0.15</span>
+      <span class="text-[#CC0000] font-bold">LILA NORTH STAR METRICS:</span>
+      <span>SOFT LAUNCH D1 RETENTION TO 40% // AVG CORE LOOP ACTIONS: 8+ PER DAY // HARD LAUNCH ORGANIC ARPDAU: $0.15 // D7 ROAS: 20%</span>
       <span class="mx-6 text-neutral-400">|</span>
-      <span>Q2: REINVENTING INTERACTIVE NARRATIVE F2P (2-MINUTE QTE RULE &amp; 10/20 ENERGY ECONOMY)</span>
+      <span>QUESTION #2: STORY MODE F2P STRATEGY (2-MINUTE QTE RULE &amp; 10/20 ENERGY BARS + DOLLARS)</span>
       <span class="mx-6 text-neutral-400">|</span>
-      <span>Q3: SURVIVOR.IO ROGUELIKE ELEMENTAL SYNERGY SPEC &amp; 3 UX WIREFRAMES</span>
+      <span>QUESTION #3: SURVIVOR.IO ROGUELIKE BUILD &amp; ELEMENTAL SYNERGY SYSTEM</span>
     </div>
   </div>
 
   <!-- =========================================================
-       2. NEWSPAPER MASTHEAD & AUDIO PRESS DECK
+       2. MASTHEAD & MUSIC PLAYER
        ========================================================= -->
   <header class="max-w-screen-xl mx-auto px-4 pt-6">
-    <!-- Top Edition Metadata Bar -->
     <div class="border-t-2 border-b border-[#111111] py-2 flex flex-wrap justify-between items-center gap-4 font-mono text-xs uppercase tracking-widest text-neutral-700">
-      <div>VOL. I ... NO. 01 // BENGALURU &amp; GLOBAL EDITION</div>
-      <div class="font-bold text-[#111111]">"ALL THE DESIGN THAT'S FIT TO SHIP" — WARTIME ORIENTATION: RESULTS &gt; STABILITY</div>
-      <div>OCTOBER 2026 // EDITION: FREE-TO-PLAY</div>
+      <div>WRITTEN TEST PART 1 // RYAN JOSHY</div>
+      <div class="font-bold text-[#111111]">LILA GAMES — GAME DESIGNER APPLICATION</div>
+      <div>BENGALURU, INDIA</div>
     </div>
 
-    <!-- Main Masthead Title + Embedded Audio Press Deck -->
     <div class="grid grid-cols-12 border-b-4 border-[#111111] py-6 items-center gap-6">
       <div class="col-span-12 lg:col-span-8 lg:border-r border-[#111111] lg:pr-6">
         <div class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold mb-1">
-          LILA GAMES WRITTEN TEST // PART 1 SUBMISSION DOSSIER
+          GAME DESIGNER WRITTEN TEST // INTERACTIVE SUBMISSION
         </div>
         <h1 class="font-serif text-5xl sm:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.9] text-[#111111]">
-          THE LILA DISPATCH
+          RYAN JOSHY
         </h1>
-        <p class="font-body text-base sm:text-lg text-neutral-600 mt-3 leading-relaxed">
-          An interactive engineering and game design broadsheet by <strong class="text-[#111111]">Ryan Joshy</strong> — featuring the playable Unity URP WebGL prototype (<em>Spin to Lose</em>), the Interactive Narrative F2P strategy, the <em>Survivor.io</em> Roguelike Synergy specification, and raw notes from the <em>Re-collection</em> Obsidian vault.
+        <p class="font-body text-base sm:text-lg text-neutral-700 mt-3 leading-relaxed">
+          Instead of sending a plain text document, I put my playable Unity WebGL build (<strong>Spin to Lose</strong>), my Question #2 F2P story mode strategy, my Question #3 <em>Survivor.io</em> build spec, and my <em>Re-collection</em> Obsidian vault notes into one page so you can play the game and test everything in one place.
         </p>
       </div>
 
-      <!-- Top-Right Audio Press Deck ("It's Going Down Now") -->
+      <!-- Music Player ("It's Going Down Now") -->
       <div class="col-span-12 lg:col-span-4">
         <div class="border border-[#111111] bg-[#F9F9F7] p-4 hard-shadow-hover">
           <div class="flex items-center justify-between border-b border-[#111111] pb-2 mb-3">
             <span class="font-mono text-xs uppercase tracking-widest font-bold text-[#111111]">
-              AUDIO PRESS DECK // BGM
+              MUSIC PLAYER // BGM
             </span>
             <span id="audio-status-badge" class="bg-[#CC0000] text-white font-mono text-[10px] uppercase tracking-widest px-2 py-0.5 font-bold">
-              STANDBY
+              PAUSED
             </span>
           </div>
           <div class="font-serif font-bold text-lg text-[#111111] truncate mb-1" id="ost-track-title">
-            It's Going Down Now (P3R OST)
+            It's Going Down Now
           </div>
           <div class="font-mono text-xs text-neutral-500 mb-3">
-            Source: Local MP3 / Stream Fallback
+            Persona 3 Reload OST
           </div>
           <div class="flex flex-wrap gap-2">
-            <button id="ost-play-btn" onclick="toggleOstPlayback()" class="flex-1 min-h-[44px] bg-[#111111] text-[#F9F9F7] border border-[#111111] hover:bg-white hover:text-[#111111] font-sans text-xs font-bold uppercase tracking-widest px-3 py-2 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-950">
-              PLAY BGM
+            <button id="ost-play-btn" onclick="toggleOstPlayback()" class="flex-1 min-h-[44px] bg-[#111111] text-[#F9F9F7] border border-[#111111] hover:bg-white hover:text-[#111111] font-sans text-xs font-bold uppercase tracking-widest px-3 py-2 transition-all duration-200">
+              PLAY SONG
             </button>
             <button onclick="document.getElementById('custom-mp3-input').click()" class="min-h-[44px] border border-[#111111] bg-transparent hover:bg-[#111111] hover:text-[#F9F9F7] font-mono text-xs uppercase tracking-widest px-3 py-2 transition-all duration-200">
               LOAD MP3
             </button>
             <button onclick="toggleYouTubeDrawer()" class="min-h-[44px] border border-[#111111] bg-transparent hover:bg-[#111111] hover:text-[#F9F9F7] font-mono text-xs uppercase tracking-widest px-3 py-2 transition-all duration-200">
-              STREAM
+              YOUTUBE
             </button>
             <input type="file" id="custom-mp3-input" accept="audio/*" class="hidden" onchange="loadLocalMp3File(this)">
           </div>
@@ -209,22 +200,22 @@
     </div>
 
     <!-- =========================================================
-         3. STICKY SECTION NAVIGATION BAR & READING MODE TOGGLE
+         3. STICKY NAVIGATION TABS
          ========================================================= -->
-    <nav aria-label="Edition Sections" class="sticky top-0 z-40 bg-[#F9F9F7] border-b-4 border-[#111111] shadow-sm">
+    <nav aria-label="Test Sections" class="sticky top-0 z-40 bg-[#F9F9F7] border-b-4 border-[#111111] shadow-sm">
       <div class="flex flex-wrap items-stretch justify-between">
         <div class="flex flex-wrap items-stretch">
           <button onclick="switchSection(0)" class="nav-tab-btn min-h-[44px] px-4 py-3 font-sans text-xs font-bold uppercase tracking-widest border-r border-[#111111] bg-[#111111] text-[#F9F9F7] transition-colors duration-200">
-            01. Q1: Spin to Lose (Prototype)
+            01. Question #1: Spin to Lose
           </button>
           <button onclick="switchSection(1)" class="nav-tab-btn min-h-[44px] px-4 py-3 font-sans text-xs font-bold uppercase tracking-widest border-r border-[#111111] text-[#111111] hover:bg-[#E5E5E0] transition-colors duration-200">
-            02. Q2: Narrative F2P Strategy
+            02. Question #2: Narrative F2P
           </button>
           <button onclick="switchSection(2)" class="nav-tab-btn min-h-[44px] px-4 py-3 font-sans text-xs font-bold uppercase tracking-widest border-r border-[#111111] text-[#111111] hover:bg-[#E5E5E0] transition-colors duration-200">
-            03. Q3: Survivor Synergy Spec
+            03. Question #3: Survivor Spec
           </button>
           <button onclick="switchSection(3)" class="nav-tab-btn min-h-[44px] px-4 py-3 font-sans text-xs font-bold uppercase tracking-widest border-r border-[#111111] text-[#111111] hover:bg-[#E5E5E0] transition-colors duration-200">
-            04. AI &amp; Wartime Workflow
+            04. Notes &amp; How I Used AI
           </button>
           <button onclick="switchSection(4)" class="nav-tab-btn min-h-[44px] px-4 py-3 font-sans text-xs font-bold uppercase tracking-widest border-r border-[#111111] text-[#111111] hover:bg-[#E5E5E0] transition-colors duration-200">
             05. Obsidian Vault &amp; Sources
@@ -232,14 +223,14 @@
         </div>
 
         <button id="broadsheet-mode-btn" onclick="toggleBroadsheetMode()" class="min-h-[44px] px-4 py-3 font-mono text-xs font-bold uppercase tracking-widest text-[#CC0000] hover:bg-[#111111] hover:text-white transition-colors duration-200">
-          [ PRINT MODE: FULL BROADSHEET ]
+          [ SHOW ALL SECTIONS ON ONE PAGE ]
         </button>
       </div>
     </nav>
   </header>
 
   <!-- =========================================================
-       MAIN 12-COLUMN NEWSPAPER CONTENT CONTAINER
+       MAIN 12-COLUMN CONTAINER
        ========================================================= -->
   <main class="max-w-screen-xl mx-auto px-4 pb-20">
 
@@ -248,113 +239,110 @@
          ======================================================= -->
     <section id="sec-0" class="edition-section active-section pt-8 newsprint-texture">
 
-      <!-- Section Header Strip -->
       <div class="border-b-4 border-[#111111] pb-4 mb-8 flex flex-wrap justify-between items-end gap-4">
         <div>
           <span class="bg-[#CC0000] text-white font-mono text-xs uppercase tracking-widest px-2.5 py-1 font-bold inline-block mb-2">
-            SECTION 01 // QUESTION #1 DELIVERABLE (CORE LOOP + D1 HOOK)
+            QUESTION #1 // PLAYABLE PROTOTYPE (CORE LOOP + D1)
           </span>
           <h2 class="font-serif text-4xl sm:text-6xl font-black tracking-tight text-[#111111] leading-none">
-            Spin to Lose: Lose the Jackpot, Win Your Freedom
+            Spin to Lose
           </h2>
         </div>
         <div class="font-mono text-xs uppercase tracking-widest text-neutral-500">
-          ENGINE: UNITY URP (3D WEBGL) // GENRE: PSYCHOLOGICAL HORROR &amp; STRATEGY
+          UNITY URP / 3D WEBGL // JUNIPER DEVS GAME JAM (3-PERSON TEAM)
         </div>
       </div>
 
-      <!-- Asymmetric 8-Col / 4-Col Split: Embedded Unity WebGL Build + The Pitch & First Session -->
+      <!-- 8-Col / 4-Col Split: Unity WebGL Build + The Pitch & First Session -->
       <div class="grid grid-cols-12 border-t border-l border-[#111111]">
 
-        <!-- Left 8 Columns: ONLY the Unity WebGL Prototype ("Spin to Lose") -->
+        <!-- Left 8 Columns: Unity WebGL Player -->
         <div class="col-span-12 lg:col-span-8 border-r border-b border-[#111111] p-6 bg-[#F9F9F7] flex flex-col justify-between">
           <div>
             <div class="flex flex-wrap justify-between items-center gap-3 border-b border-[#111111] pb-3 mb-4">
               <div>
                 <span class="font-mono text-xs uppercase tracking-widest font-bold text-[#CC0000]">
-                  FIG. 1.1 — PLAYABLE UNITY WEBGL PROTOTYPE //
+                  FIG. 1.1 — PLAYABLE WEBGL BUILD //
                 </span>
                 <span class="font-mono text-xs uppercase tracking-widest text-[#111111] font-bold">
-                  SPIN TO LOSE (ONE-CLICK BROWSER BUILD)
+                  LOSE THE JACKPOT. WIN THE GAME.
                 </span>
               </div>
               <div class="flex flex-wrap gap-2">
                 <button onclick="bootUnityWebGL()" class="min-h-[38px] px-3 py-1.5 font-mono text-xs font-bold uppercase tracking-widest border border-[#111111] bg-[#111111] text-white hover:bg-white hover:text-[#111111] transition-all">
-                  RELOAD WEBGL
+                  RELOAD GAME
                 </button>
                 <button onclick="goUnityFullscreen()" class="min-h-[38px] px-3 py-1.5 font-mono text-xs font-bold uppercase tracking-widest border border-[#111111] bg-transparent hover:bg-[#111111] hover:text-white transition-all">
                   FULLSCREEN
                 </button>
-                <a href="https://github.com/" target="_blank" rel="noopener" id="github-repo-link" class="min-h-[38px] px-3 py-1.5 font-mono text-xs font-bold uppercase tracking-widest border border-[#111111] bg-white text-[#111111] hover:bg-[#CC0000] hover:text-white hover:border-[#CC0000] transition-all flex items-center">
-                  GITHUB CODE REPO &rarr;
+                <a href="https://github.com/mishimatech/spintolose" target="_blank" rel="noopener" id="github-repo-link" class="min-h-[38px] px-3 py-1.5 font-mono text-xs font-bold uppercase tracking-widest border border-[#111111] bg-white text-[#111111] hover:bg-[#CC0000] hover:text-white hover:border-[#CC0000] transition-all flex items-center">
+                  GITHUB REPO &rarr;
                 </a>
               </div>
             </div>
 
-            <!-- Unity WebGL Canvas Mount (Build/5fb80277808ce8dbfa45b3c9035657db) -->
+            <!-- Unity WebGL Canvas -->
             <div id="unity-webgl-wrapper" class="border-2 border-[#111111] bg-[#111111] relative">
               <canvas id="unity-canvas" width="960" height="540" tabindex="-1" class="w-full aspect-video block bg-[#111111]"></canvas>
 
-              <!-- Loading / Launch Overlay -->
               <div id="unity-loading-overlay" class="absolute inset-0 flex flex-col items-center justify-center bg-[#111111] text-[#F9F9F7] p-6 text-center">
                 <div class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold mb-2">
-                  UNITY URP 3D WEBGL // SPIN TO LOSE
+                  UNITY URP 3D // SPIN TO LOSE
                 </div>
                 <h4 class="font-serif text-2xl sm:text-3xl font-bold text-white mb-2">
-                  Pull the Lever 6 Times Without Hitting a Jackpot
+                  Pull the Lever 6 Times Without Hitting the Jackpot
                 </h4>
                 <p class="font-body text-sm text-neutral-300 max-w-md mb-5" id="unity-status-msg">
-                  Loading WebAssembly build (<code>Build/5fb80277808ce8dbfa45b3c9035657db.loader.js</code>)...
+                  Loading WebGL build from <code>Build/5fb80277808ce8dbfa45b3c9035657db.loader.js</code>...
                 </p>
                 <div class="w-64 h-3 border border-white bg-neutral-900 overflow-hidden mb-5">
                   <div id="unity-progress-bar" class="h-full bg-[#CC0000] w-0 transition-all"></div>
                 </div>
                 <button onclick="bootUnityWebGL()" class="min-h-[44px] px-6 py-2.5 bg-white text-[#111111] font-mono text-xs uppercase tracking-widest font-bold hover:bg-[#CC0000] hover:text-white transition-all">
-                  LAUNCH UNITY PROTOTYPE
+                  START PROTOTYPE
                 </button>
               </div>
             </div>
           </div>
 
-          <!-- Technical Specs & Controls Caption Box -->
           <div class="mt-4 border-t border-[#111111] pt-3 grid grid-cols-1 sm:grid-cols-3 gap-4 font-mono text-xs">
             <div>
-              <span class="text-neutral-500 block uppercase">RENDER PIPELINE</span>
-              <strong class="text-[#111111]">Unity URP + Custom HLSL Posterization (4–6 Bands)</strong>
+              <span class="text-neutral-500 block uppercase">TECH STACK</span>
+              <strong class="text-[#111111]">Unity URP + 20-Line HLSL Posterization + Blender + Aseprite</strong>
             </div>
             <div>
               <span class="text-neutral-500 block uppercase">STARTING JACKPOT ODDS</span>
-              <strong class="text-[#CC0000]">~40–45% Base Probability (Diegetic Display)</strong>
+              <strong class="text-[#CC0000]">~40–45% (Written on Machine Face)</strong>
             </div>
             <div>
               <span class="text-neutral-500 block uppercase">WIN / LOSS CONDITION</span>
-              <strong class="text-[#111111]">Unlock 6 Shackles to Escape / Vital Organ Lost = Death</strong>
+              <strong class="text-[#111111]">6 Shackles Open = Escape / Vital Organ Taken = Death</strong>
             </div>
           </div>
         </div>
 
-        <!-- Right 4 Columns: 1. The Pitch & 2. Core Loop / First Session -->
+        <!-- Right 4 Columns: The Pitch & Core Loop -->
         <div class="col-span-12 lg:col-span-4 border-r border-b border-[#111111] p-6 flex flex-col justify-between bg-[#F9F9F7]">
           <div>
             <div class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold border-b border-[#111111] pb-2 mb-4">
-              01 // THE PITCH (WHAT, WHO, WHY)
+              01 // THE PITCH
             </div>
             <h3 class="font-serif text-3xl font-bold text-[#111111] leading-tight mb-4">
-              A Slot Machine Where Winning Takes a Piece of You
+              What Is It, Who's It For, and Why Play It?
             </h3>
             <p class="font-body text-base leading-relaxed text-justify text-neutral-800 drop-cap mb-4">
-              Set in a world where gambling is omnipresent, an antagonist who lost everything through addiction has trapped gambling addicts in a chair. You are strapped in at arm's reach of a brutalist slot machine and must pull the lever repeatedly. The twist: <strong>hitting the jackpot is BAD</strong>. Every non-jackpot pull unlocks 1 of 6 shackles. Every jackpot triggers the backlit antagonist to enter, take a body part (implied via cut-to-black and clinical sound design—zero explicit gore), and hand you strategy powerup cards in exchange.
+              We built <strong>Spin to Lose</strong> in Unity (URP 3D) for the Juniper Devs Game Jam. The jam theme was "Spin to Win," so we flipped it on its head. Set in a world where gambling is everywhere, an antagonist who lost everything through addiction has trapped gambling addicts in a chair. You're strapped in and forced to pull a slot machine lever repeatedly. The twist is that <strong>hitting the jackpot is BAD</strong>. Every jackpot triggers the antagonist to take a body part in exchange for powerups. Your goal is to NOT win—pull the lever 6 times without hitting the jackpot to unlock all 6 shackles and escape.
             </p>
             <p class="font-body text-sm leading-relaxed text-justify text-neutral-700 mb-4">
-              <strong>Who it's for &amp; why play it:</strong> Built for fans of tense tabletop-style psychological horror and probability strategy games (like <em>Buckshot Roulette</em> and <em>Inscryption</em>). Instead of chasing a dopamine jackpot, you are actively trying to rig the machine <em>against</em> yourself so you can survive 6 clean pulls and escape.
+              It's built for players who love tense, low-poly psychological horror and strategy games like <em>Buckshot Roulette</em>. We kept the tone psychological horror rather than gore: the <em>SAW</em>-inspired premise stays, but all body horror is implied through a cut to black and sound design (one thud, a cloth sound, and silence) while the antagonist stays calm, clinical, and backlit in silhouette.
             </p>
 
             <div class="border-t border-[#111111] pt-4 mt-4">
               <div class="font-mono text-xs uppercase tracking-widest font-bold text-[#111111] mb-2">
-                02 // FIRST SESSION (FIRST FEW MINUTES)
+                02 // CORE LOOP &amp; FIRST SESSION
               </div>
               <p class="font-body text-sm leading-relaxed text-justify text-neutral-700">
-                In the first 3 minutes, the machine powers on with a diegetic <strong>40–45% jackpot probability</strong> etched onto its face. You pull the lever, hear the 3 independent reel cylinders clunk to a stop, and either unlock your first shackle or face your first sacrifice. If a jackpot lands, you must choose between safe medical <strong>Stitching</strong> (no bonus) or risking a <strong>Second Body Part</strong> for a top-tier odds-rigging card.
+                In the first few minutes, you're locked in a fixed first-person POV at arm's reach of the machine. Starting jackpot probability is around <strong>40–45%</strong> (displayed diegetically right on the machine face instead of a 2D UI overlay). You pull the lever, the 3 separate reel cylinders spin and clunk to a stop, and RNG determines the result: a non-jackpot unlocks 1 shackle, while a jackpot flickers the lights, plays a falsely triumphant major-key jingle, and brings in the antagonist to take a body part and give you powerup cards to lower your jackpot odds.
               </p>
             </div>
           </div>
@@ -364,162 +352,163 @@
               WHAT BRINGS THEM BACK TOMORROW
             </div>
             <p class="font-body text-xs leading-relaxed text-neutral-800">
-              Even after all 6 shackles unlock, the player is given a final psychological test: walk out the door, or <strong>choose to stay in the chair and keep spinning</strong>. That high-stakes greed hook—paired with discovering how the 5 powerup cards and internal wiring dials interact—drives immediate "one more run" retention.
+              Two things: First, after a sacrifice you can accept medical stitching (safe, no bonus) or risk taking an extra body part for a better loot tier of cards. Second, even after all 6 shackles are unlocked and you can escape, <strong>you can still choose to stay in the chair and continue spinning</strong>—testing how far your rigged odds can carry you.
             </p>
           </div>
         </div>
       </div>
 
-      <!-- MANDATORY INVERTED BLACK SECTION: 6-Step Core Loop & The 5 Powerup Cards + Wiring Tool -->
+      <!-- INVERTED BLACK SECTION: Core Loop Steps & The 5 Powerup Cards from the Playbook -->
       <div class="bg-[#111111] text-[#F9F9F7] border-x border-b border-[#111111] p-6 sm:p-8">
         <div class="flex flex-wrap justify-between items-center border-b border-neutral-700 pb-4 mb-6">
           <div>
             <span class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold block mb-1">
-              SYSTEM ARCHITECTURE // INVERTED BRIEFING
+              GAMEPLAY MECHANICS // FROM OUR GAME JAM PLAYBOOK
             </span>
             <h3 class="font-serif text-2xl sm:text-3xl font-bold text-white">
-              The Core Loop, Sacrifice Penalties &amp; The 5 Odds-Rigging Cards
+              The 6-Shackle Loop, Sacrifice Penalties &amp; All 5 Powerup Cards
             </h3>
           </div>
           <span class="font-mono text-xs uppercase tracking-widest text-neutral-400">
-            FIG. 1.2 — CORE LOOP &amp; CARD TABLE
+            FIG. 1.2 — POWERUP CARD DESIGN TABLE
           </span>
         </div>
 
-        <!-- 4-Stage Core Loop Strip -->
         <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
           <div class="border border-neutral-700 p-4">
-            <div class="font-mono text-xs font-bold text-[#CC0000] uppercase tracking-widest mb-1">STEP 01 // PULL LEVER</div>
-            <h4 class="font-serif text-lg font-bold text-white mb-1">Spin the 3 Reels</h4>
+            <div class="font-mono text-xs font-bold text-[#CC0000] uppercase tracking-widest mb-1">STEP 01 // LEVER PULL</div>
+            <h4 class="font-serif text-lg font-bold text-white mb-1">3 Independent Reels</h4>
             <p class="font-body text-xs text-neutral-300 leading-relaxed">
-              Pull the physical lever at arm's reach. Three separate low-poly cylinders spin and clunk to a stop against a 40–45% base jackpot float.
+              Pull the slot machine lever. Three separate Blender cylinder meshes spin, slow down, and clunk to a stop one by one.
             </p>
           </div>
           <div class="border border-neutral-700 p-4">
-            <div class="font-mono text-xs font-bold text-[#CC0000] uppercase tracking-widest mb-1">STEP 02 // BRANCH</div>
-            <h4 class="font-serif text-lg font-bold text-white mb-1">Shackle vs. Jackpot</h4>
+            <div class="font-mono text-xs font-bold text-[#CC0000] uppercase tracking-widest mb-1">STEP 02 // RESULT</div>
+            <h4 class="font-serif text-lg font-bold text-white mb-1">Shackle or Sacrifice</h4>
             <p class="font-body text-xs text-neutral-300 leading-relaxed">
-              <strong>Non-Jackpot:</strong> 1 shackle clicks open (6 needed to win). <strong>Jackpot:</strong> Lights flicker, wrong-sounding major jingle plays, antagonist enters.
+              Non-jackpot unlocks 1 of 6 shackles. Jackpot triggers the antagonist encounter and body part inventory check.
             </p>
           </div>
           <div class="border border-neutral-700 p-4">
-            <div class="font-mono text-xs font-bold text-[#CC0000] uppercase tracking-widest mb-1">STEP 03 // SACRIFICE</div>
-            <h4 class="font-serif text-lg font-bold text-white mb-1">Stitching or Double Risk</h4>
+            <div class="font-mono text-xs font-bold text-[#CC0000] uppercase tracking-widest mb-1">STEP 03 // PENALTIES</div>
+            <h4 class="font-serif text-lg font-bold text-white mb-1">Stitching vs. Extra Part</h4>
             <p class="font-body text-xs text-neutral-300 leading-relaxed">
-              Lose 1 body part (causing screen distortion, fewer card slots, or slower pulls). Accept medical stitching or risk a 2nd part for a higher loot tier.
+              Losing a body part causes gameplay penalties (red vignette, screen distortion, fewer card slots, slower pulls). Risk a 2nd part for higher tier loot.
             </p>
           </div>
           <div class="border border-neutral-700 p-4">
-            <div class="font-mono text-xs font-bold text-[#CC0000] uppercase tracking-widest mb-1">STEP 04 // RIG THE MACHINE</div>
-            <h4 class="font-serif text-lg font-bold text-white mb-1">Cards &amp; Internal Wiring</h4>
+            <div class="font-mono text-xs font-bold text-[#CC0000] uppercase tracking-widest mb-1">STEP 04 // RIG ODDS</div>
+            <h4 class="font-serif text-lg font-bold text-white mb-1">Cards &amp; Machine Wiring</h4>
             <p class="font-body text-xs text-neutral-300 leading-relaxed">
-              Play cards from the physical tray or use the "Open the Machine" tool to shift camera to the back panel and rewire dials before pulling again.
+              Play powerup cards from the in-world card tray or use the "Open the machine" tool to shift camera to the back panel and tweak 3 internal wires/dials.
             </p>
           </div>
         </div>
 
-        <!-- The 5 Powerup Cards Table -->
         <div class="overflow-x-auto">
           <table class="w-full border-collapse border border-neutral-700 text-left font-body text-xs">
             <thead>
               <tr class="bg-neutral-900 text-[#F9F9F7] font-mono uppercase tracking-wider">
-                <th class="border border-neutral-700 p-3">Powerup Card (In-World Tray)</th>
-                <th class="border border-neutral-700 p-3 text-[#CC0000]">Probability / Reel Modifier</th>
-                <th class="border border-neutral-700 p-3">Tactical Description &amp; Use Case</th>
+                <th class="border border-neutral-700 p-3">Card (In-World Card Tray)</th>
+                <th class="border border-neutral-700 p-3 text-[#CC0000]">Effect</th>
+                <th class="border border-neutral-700 p-3">Description (From Playbook)</th>
               </tr>
             </thead>
             <tbody class="text-neutral-200">
               <tr>
-                <td class="border border-neutral-700 p-3 font-bold text-white font-mono">01. REMOVE SYMBOL</td>
-                <td class="border border-neutral-700 p-3 font-mono text-[#CC0000] font-bold">-8% Jackpot Odds (Permanent)</td>
-                <td class="border border-neutral-700 p-3">Permanently removes one jackpot symbol from the 8-symbol Aseprite reel pool for the rest of the run.</td>
+                <td class="border border-neutral-700 p-3 font-bold text-white font-mono">01. Remove Symbol</td>
+                <td class="border border-neutral-700 p-3 font-mono text-[#CC0000] font-bold">-8% jackpot</td>
+                <td class="border border-neutral-700 p-3">Permanently removes one jackpot symbol from the reel pool.</td>
               </tr>
               <tr class="bg-neutral-900/50">
-                <td class="border border-neutral-700 p-3 font-bold text-white font-mono">02. WEIGHT SHIFT</td>
-                <td class="border border-neutral-700 p-3 font-mono text-[#CC0000] font-bold">-15% Jackpot Odds (2 Pulls)</td>
-                <td class="border border-neutral-700 p-3">Temporarily biases the reels away from the jackpot combo for the next two lever pulls only.</td>
+                <td class="border border-neutral-700 p-3 font-bold text-white font-mono">02. Weight Shift</td>
+                <td class="border border-neutral-700 p-3 font-mono text-[#CC0000] font-bold">-15% for 2 pulls</td>
+                <td class="border border-neutral-700 p-3">Temporarily biases the reels away from jackpot for the next two pulls only.</td>
               </tr>
               <tr>
-                <td class="border border-neutral-700 p-3 font-bold text-white font-mono">03. DEAD REEL</td>
-                <td class="border border-neutral-700 p-3 font-mono text-[#CC0000] font-bold">Freeze 1 Reel Cylinder</td>
-                <td class="border border-neutral-700 p-3">Locks one of the 3 independent reel cylinders onto a safe non-jackpot symbol for the next pull (single use).</td>
+                <td class="border border-neutral-700 p-3 font-bold text-white font-mono">03. Dead Reel</td>
+                <td class="border border-neutral-700 p-3 font-mono text-[#CC0000] font-bold">Freeze one reel</td>
+                <td class="border border-neutral-700 p-3">Lock one reel to a non-jackpot symbol for the next pull. Single use.</td>
               </tr>
               <tr class="bg-neutral-900/50">
-                <td class="border border-neutral-700 p-3 font-bold text-white font-mono">04. LUCKY CHARM</td>
-                <td class="border border-neutral-700 p-3 font-mono text-[#CC0000] font-bold">Automatic Safe Re-Roll</td>
-                <td class="border border-neutral-700 p-3">Insurance card: if a jackpot result lands, automatically forces a single re-roll before the antagonist enters.</td>
+                <td class="border border-neutral-700 p-3 font-bold text-white font-mono">04. Lucky Charm</td>
+                <td class="border border-neutral-700 p-3 font-mono text-[#CC0000] font-bold">Re-roll once</td>
+                <td class="border border-neutral-700 p-3">After a jackpot result lands, trigger an automatic single re-roll. One use.</td>
               </tr>
               <tr>
-                <td class="border border-neutral-700 p-3 font-bold text-white font-mono">05. LOADED</td>
-                <td class="border border-neutral-700 p-3 font-mono text-[#CC0000] font-bold">Manually Set 1 Reel</td>
-                <td class="border border-neutral-700 p-3">High-tier sacrifice reward: manually set any one reel cylinder to a specific symbol before pulling the lever.</td>
+                <td class="border border-neutral-700 p-3 font-bold text-white font-mono">05. Loaded</td>
+                <td class="border border-neutral-700 p-3 font-mono text-[#CC0000] font-bold">Set one reel</td>
+                <td class="border border-neutral-700 p-3">Manually set any one reel to a specific symbol before the next pull.</td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
 
-      <!-- Remaining Question #1 Points (2x2 Newspaper Grid: Progression/Metagame, Money, AI, Shipping & References) -->
+      <!-- Remaining Question #1 Sub-Points (Progression/Metagame, Money, AI, Shipping, Reference Games) -->
       <div class="grid grid-cols-12 border-l border-[#111111]">
 
         <!-- 3. Progression & Metagame -->
         <div class="col-span-12 lg:col-span-6 border-r border-b border-[#111111] p-6 bg-[#F9F9F7] hard-shadow-hover">
           <div class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold mb-2">
-            03 // PROGRESSION &amp; MONTHS-LONG METAGAME
+            03 // PROGRESSION &amp; METAGAME
           </div>
-          <h3 class="font-serif text-2xl font-bold mb-3">Day-1 Greed Hook &amp; Multi-Month Depth</h3>
+          <h3 class="font-serif text-2xl font-bold mb-3">The Day-1 Hook &amp; What Keeps Someone Playing for Months</h3>
           <p class="font-body text-sm leading-relaxed text-justify text-neutral-800 mb-3">
-            <strong>The Day-1 Hook Built:</strong> Two interlocking hooks drive immediate replayability on Day 1. First is the <strong>Sacrifice Risk/Reward Dilemma</strong>—choosing whether to accept safe medical stitching after a jackpot or sacrifice a second body part (suffering heavier screen distortion and losing card tray slots) to draw from the top-tier card pool. Second is the <strong>Post-Escape Greed Hook</strong>: once all 6 shackles are unlocked, you don't have to leave—you can choose to stay in the chair and keep spinning to test how far your rigged deck can push your luck.
+            <strong>The Day-1 Hook I Built:</strong> The main hook in the prototype is the sacrifice choice menu (accepting medical stitching vs. offering an extra body part to pull from a higher loot tier of cards) combined with the "open the machine" tool where you pop the back panel off and mess with the internal wiring to lower your jackpot float. Plus, letting the player choose to keep spinning even after all 6 shackles are open baits them into testing their luck for one more pull.
           </p>
           <p class="font-body text-sm leading-relaxed text-justify text-neutral-800">
-            <strong>What Keeps Someone Playing for Months:</strong> Expanding the 5-card prototype into a deep roguelike deckbuilder. Using the <strong>Pact of Punishment ("Heat" 0–57)</strong> structure I analyzed from <em>Hades</em> in my Obsidian vault, players who escape unlock higher-stakes interrogation tables, new antagonist dealers with unique rigging rules, 40+ unlockable cards, and complex back-panel wiring puzzles.
+            <strong>What Keeps Someone Playing for Months:</strong> To turn this into a long-term game without a stupid long stat grind, I'd use the exact progression model I wrote about in my Obsidian analysis of <strong>Hades (the "Pact of Punishment" / Heat system)</strong>. Once you beat the final boss/escape the chair once, you unlock "Heat" options (which in <em>Hades</em> scale from 0 to 57, with the record being 52). Core changes to your abilities can be refunded so every run starts fresh, you can equip a low-impact Keepsake, and the game pushes you to turn up the difficulty modifiers to earn upgrade currencies rather than just grinding easy runs.
           </p>
         </div>
 
         <!-- 4. Money -->
         <div class="col-span-12 lg:col-span-6 border-r border-b border-[#111111] p-6 bg-[#F9F9F7] hard-shadow-hover">
           <div class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold mb-2">
-            04 // MONEY (WITHOUT FEELING LIKE A CASH GRAB)
+            04 // MONEY
           </div>
-          <h3 class="font-serif text-2xl font-bold mb-3">Monetizing an Anti-Gambling Thriller Ethically</h3>
+          <h3 class="font-serif text-2xl font-bold mb-3">How It Makes Money Without Feeling Like a Cash Grab</h3>
           <p class="font-body text-sm leading-relaxed text-justify text-neutral-800 mb-3">
-            Because <em>Spin to Lose</em> is a psychological critique of gambling addiction, selling real-money revives or pay-to-win probability boosts would completely destroy the game's tension and thematic integrity.
+            Since the whole premise of <em>Spin to Lose</em> is about the horror of gambling addiction, selling real-money revives or pay-to-win probability boosts mid-run would completely ruin the game and feel like a cash grab.
           </p>
-          <ul class="font-body text-sm leading-relaxed text-neutral-800 space-y-2 list-disc pl-5">
-            <li><strong>Diegetic Machine &amp; Card Cosmetics:</strong> Players purchase custom retro CRT/brutalist slot machine chassis skins, custom Aseprite pixel-art card backs, and custom shackle/tray themes that sit physically in the 3D room.</li>
-            <li><strong>DLC Antagonist Acts &amp; Expansion Decks:</strong> The base 6-shackle survival mode and core card pool are 100% free. Players pay a flat price ($2.99–$4.99) for new seasonal "Acts" featuring new antagonists, new mechanical contraptions, and new 15-card strategy archetypes.</li>
-            <li><strong>Zero Forced Ads:</strong> Interrupting a horror atmosphere with a banner or mid-run video ad kills immersion. Any ad integration is strictly opt-in between runs in the lobby.</li>
+          <p class="font-body text-sm leading-relaxed text-justify text-neutral-800 mb-3">
+            Instead, I would use the same fair F2P model I designed for Question #2:
+          </p>
+          <ul class="font-body text-sm leading-relaxed text-neutral-800 space-y-1.5 list-disc pl-5">
+            <li><strong>Cosmetics &amp; Mix-and-Match Skin Packs:</strong> Players can buy skin packs for the slot machine body, custom pixel-art card faces in the tray, and shackle/room cosmetics that apply across the whole game and can be mixed and matched.</li>
+            <li><strong>Subtle Energy &amp; Dual Currency:</strong> If run as a mobile F2P title, runs use a subtle energy bar system where completing runs rewards a small amount of premium currency so F2P players can earn convenience items for free.</li>
+            <li><strong>Zero Forced Ads:</strong> Interrupting the horror atmosphere with forced ads mid-run ruins the tension. Ads are strictly opt-in outside of runs.</li>
           </ul>
         </div>
 
         <!-- 5. AI -->
         <div class="col-span-12 lg:col-span-6 border-r border-b border-[#111111] p-6 bg-[#F9F9F7] hard-shadow-hover">
           <div class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold mb-2">
-            05 // AI: HOW WE BUILT IT &amp; IN-GAME AI
+            05 // AI: HOW I USED IT &amp; WHETHER IT'S IN THE GAME
           </div>
-          <h3 class="font-serif text-2xl font-bold mb-3">Engineering Acceleration + Adaptive Dealer AI</h3>
+          <h3 class="font-serif text-2xl font-bold mb-3">Hand-Made Jam Assets + AI for Code &amp; Shaders</h3>
           <p class="font-body text-sm leading-relaxed text-justify text-neutral-800 mb-3">
-            <strong>How AI Was Used to Build It:</strong> Built during the Juniper Devs Game Jam under a strict <em>No AI Art or Audio</em> rule, every 3D mesh (Blender low-poly flat-shaded models), pixel-art texture (Aseprite reel symbols and cards), and foley sound (Audacity + LMMS) was 100% hand-made by our 3-person team. On the code side, I used AI coding collaborators (Claude Code / Gemini) to accelerate writing the custom ~20-line HLSL fullscreen posterization URP Renderer Feature shader, C# reel cylinder state machines, and Inspector-exposed <code>AudioClip</code>/<code>GameObject</code> fields so my 3D and Audio teammates could wire assets without blocking on code.
+            <strong>How I Used AI to Build It:</strong> We built this prototype for the Juniper Devs Game Jam, where the #1 rule was <strong>No AI art or audio</strong> (no Midjourney, DALL-E, Suno, or ElevenLabs), and the rule on code was <em>"Code assistance is unenforceable but use your conscience."</em> Because college ran from 7am to 1pm every day, our 3-person team only had a 6-hour work window (1pm–7pm, ~36 hours total across 6 days). All our 3D models were hand-made in Blender (low-poly, flat-shaded, no smoothing groups), all 8 reel symbols and 5 card faces were drawn in Aseprite, and all foley (lever pull, 3 reel stop clunks, shackle clicks, boots, and pitch-shifted antagonist lines) was recorded and processed in Audacity and LMMS.
           </p>
           <p class="font-body text-sm leading-relaxed text-justify text-neutral-800">
-            <strong>AI Inside the Game Itself:</strong> The Antagonist operates as an <strong>Adaptive Psychological Dealer AI</strong>. Rather than pulling from a purely static table, the dealer tracks player risk patterns (whether you play conservatively with <em>Stitching</em> or greedily sacrifice extra body parts, and how heavily you stack odds-lowering cards) to dynamically select voice lines, alter loot-tier offerings, and pressure your specific survival strategy.
+            I was responsible for all the code, so I used AI coding tools (Claude Code / Gemini) to help me write the ~20-line custom HLSL fullscreen posterization shader for Unity URP on Day 1, speed up the C# RNG/shackle state scripts, and build this web page. <strong>Is AI part of the game itself?</strong> No—inside the build, the slot machine runs on an exposed C# jackpot % float modified by the cards you play.
           </p>
         </div>
 
         <!-- 6. Shipping & 7. Reference Games -->
         <div class="col-span-12 lg:col-span-6 border-r border-b border-[#111111] p-6 bg-[#F9F9F7] hard-shadow-hover">
           <div class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold mb-2">
-            06 &amp; 07 // SHIPPING METRICS, KILL TRIGGERS &amp; REFERENCES
+            06 &amp; 07 // SHIPPING, SOFT LAUNCH NUMBERS &amp; REFERENCE GAMES
           </div>
-          <h3 class="font-serif text-2xl font-bold mb-3">What We Test First, Soft Launch NSMs &amp; Reference Games</h3>
+          <h3 class="font-serif text-2xl font-bold mb-3">What We Test First, Our Cut List &amp; Buckshot Roulette</h3>
           <p class="font-body text-sm leading-relaxed text-justify text-neutral-800 mb-3">
-            <strong>What We Test First &amp; Kill/Pivot Triggers:</strong> The #1 variable to test is the <strong>40–45% starting jackpot probability</strong> and the <strong>8–15 minute target run length</strong>. If players die on Pull 2 before drawing a single card, they churn from perceived unfairness; if they unlock all 6 shackles without ever hitting a jackpot, they miss the central sacrifice mechanic. Following our Scope Safety Net, if playtesters find the back-panel <em>Open the Machine</em> wiring tool confusing, we cut it first and focus 100% on the 5-card tray loop.
+            <strong>What I'd Test First &amp; What Makes Us Change Direction:</strong> In our Day 4 and Day 5 team playtests, the #1 thing we tested was whether the <strong>~40–45% starting jackpot probability</strong> felt too brutal or too easy, aiming for an <strong>8–15 minute full run</strong>. We also wrote a strict <strong>Scope Safety Net</strong> cut list in case we fell behind: (1) Cut the `Open the machine` wiring tool first (the cards-only system is still complete without it), (2) Cut mechanical body part penalties and just track them with a greyed-out icon, (3) Cut the 3D antagonist model to a flat plane + backlight shadow, (4) Cut the intro cutscene to a title card + 2 lines of text, and (5) Ship with 4 cards instead of 5. The things we never cut are the posterization shader, the core slot loop, the 6 shackles, and the sacrifice system.
           </p>
           <p class="font-body text-sm leading-relaxed text-justify text-neutral-800 mb-3">
-            <strong>Numbers Watched at Soft Launch (LILA NSM Framework):</strong> Focus on <strong>D1 Retention (target &gt;40%)</strong> and <strong>Average Core Loop Actions (8+ runs/day)</strong> at Soft Launch, then shift serially to <strong>Organic ARPDAU ($0.15)</strong> and <strong>D7 ROAS (20%)</strong> at Hard Launch.
+            <strong>Couple of Numbers to Watch at Soft Launch:</strong> Using the table from LILA's Business Values PDF (Slide 31), we watch <strong>D1 Retention (target 40%)</strong> and <strong>Average Core Loop Actions (8+ per day)</strong> at Soft Launch, then shift to <strong>Organic ARPDAU ($0.15)</strong> and <strong>D7 ROAS (20%)</strong> at Hard Launch.
           </p>
           <p class="font-body text-sm leading-relaxed text-justify text-neutral-800">
-            <strong>Reference Games Pulled Apart:</strong> <em>Buckshot Roulette</em> (borrowed the 4–6 band posterization shader, no anti-aliasing, harsh overhead point light, fixed first-person POV at arm's reach, and backlit antagonist silhouette) and <em>Inscryption</em> (diegetic in-world card tray and body-part sacrifice). <strong>What we did differently:</strong> Inverted the slot machine fantasy—turning the jackpot from a reward into a psychological horror penalty where you use strategy cards to rig the machine to <em>lose</em>.
+            <strong>Reference Games:</strong> Our main visual and vibe reference was <strong>Buckshot Roulette</strong>. We pulled apart and borrowed its 4–6 band posterization look, low-poly flat-shaded models with no anti-aliasing, 1 harsh overhead point light + 1 red/amber fill, VHS scanlines + chromatic aberration + film grain, fixed first-person POV at arm's reach, and keeping the antagonist as a backlit silhouette. <strong>What we did differently:</strong> Instead of a shotgun duel, we put you in front of a slot machine where hitting the jackpot is what kills you, and you use cards and internal wiring to lower your own odds of winning.
           </p>
         </div>
 
@@ -538,27 +527,26 @@
       <div class="border-b-4 border-[#111111] pb-4 mb-8 flex flex-wrap justify-between items-end gap-4">
         <div>
           <span class="bg-[#111111] text-white font-mono text-xs uppercase tracking-widest px-2.5 py-1 font-bold inline-block mb-2">
-            SECTION 02 // QUESTION #2 DELIVERABLE
+            QUESTION #2 // GAMEPLAY INSIGHTS &amp; STRATEGY
           </span>
           <h2 class="font-serif text-4xl sm:text-6xl font-black tracking-tight text-[#111111] leading-none">
-            Gameplay Insights: Interactive Narrative F2P
+            Interactive Narrative Sub-Genre: Story Mode Games
           </h2>
         </div>
         <div class="font-mono text-xs uppercase tracking-widest text-neutral-500">
-          SUB-GENRE: STORY MODE GAMES // REINVENTION BLUEPRINT
+          REINVENTING TELLTALE-STYLE STORY GAMES FOR MOBILE F2P
         </div>
       </div>
 
-      <!-- Asymmetric 5-Col / 7-Col Split: Author's Unedited Thesis + Visual Telemetry Charts -->
+      <!-- 5-Col / 7-Col Split: Your Exact Draft + Visual Charts -->
       <div class="grid grid-cols-12 border-t border-l border-[#111111]">
 
-        <!-- Left 5 Columns: Your Exact Draft (The App Store "Slop" Problem) -->
         <div class="col-span-12 lg:col-span-5 border-r border-b border-[#111111] p-6 bg-[#F9F9F7]">
           <div class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold border-b border-[#111111] pb-2 mb-4">
-            EDITORIAL OP-ED // WHY STORY MODE DISAPPEARED
+            WHY IT HASN'T WORKED SO FAR
           </div>
           <h3 class="font-serif text-3xl font-bold text-[#111111] leading-tight mb-4">
-            The Top 100 App Store "Slop" Problem &amp; The Telltale Vacuum
+            The Top 100 App Store "Slop" &amp; Why Telltale Disappeared from F2P
           </h3>
           <p class="font-body text-base leading-relaxed text-justify text-neutral-800 drop-cap mb-4">
             Recently I browsed the top 100 games in the App Store just to see what was on there, and all of it was just slop. All the games were fast-paced, high-dopamine games. As a model, it's fine to have games whose entire design is just to capture the user's attention for as long as possible, but it takes the "fun" part about games in my opinion. There was a time where the App Store had good story-defined games which were actually fun and playable, that wanted more from the people who were playing it. You needed to take notes about the objectives and not have the game feed it to you.
@@ -568,23 +556,22 @@
           </p>
         </div>
 
-        <!-- Right 7 Columns: Fig. 2.1 Market Share Bar Chart + Fig. 2.2 The 2-Minute Pacing Curve -->
         <div class="col-span-12 lg:col-span-7 border-r border-b border-[#111111] p-6 bg-[#F9F9F7] flex flex-col justify-between">
 
           <!-- Fig. 2.1 Bar Chart -->
           <div class="border border-[#111111] p-5 bg-white mb-6">
             <div class="flex flex-wrap justify-between items-center border-b border-[#111111] pb-2 mb-4">
               <span class="font-mono text-xs font-bold uppercase tracking-widest text-[#111111]">
-                FIG. 2.1 — APP STORE TOP 100 COMPOSITION VS. RETENTION BENCHMARKS
+                FIG. 2.1 — APP STORE TOP 100 BREAKDOWN VS. RETENTION TARGETS
               </span>
-              <span class="font-mono text-[11px] text-neutral-500">SOURCE: GAMEANALYTICS / LILA NSM</span>
+              <span class="font-mono text-[11px] text-neutral-500">OBSIDIAN NOTES + LILA NSM SLIDES</span>
             </div>
 
             <div class="space-y-4 font-mono text-xs">
               <div>
                 <div class="flex justify-between mb-1 font-bold">
-                  <span>FAST-PACED HIGH-DOPAMINE "SLOP" (TOP 100 SHARE)</span>
-                  <span class="text-[#CC0000]">~78% SHARE | 1.38% D30 RETENTION</span>
+                  <span>FAST-PACED HIGH-DOPAMINE GAMES (APP STORE TOP 100)</span>
+                  <span class="text-[#CC0000]">~78% OF TOP 100 | HIGH CHURN</span>
                 </div>
                 <div class="w-full h-6 border border-[#111111] bg-[#E5E5E0]">
                   <div class="h-full bg-[#111111] text-white flex items-center justify-end pr-2 text-[10px]" style="width: 78%;">78%</div>
@@ -593,8 +580,8 @@
 
               <div>
                 <div class="flex justify-between mb-1 font-bold">
-                  <span>DIAMOND-PAYWALL VISUAL NOVELS (20–50 GEMS PER CHOICE)</span>
-                  <span>~21% SHARE | BREAKS STORY IMMERSION</span>
+                  <span>"SPEND 30 GEMS: SAVE BOTH" VISUAL NOVELS (RUINS DRAMA)</span>
+                  <span>~21% SHARE | PAY-TO-WIN MORALITY</span>
                 </div>
                 <div class="w-full h-6 border border-[#111111] bg-[#E5E5E0]">
                   <div class="h-full bg-neutral-600 text-white flex items-center justify-end pr-2 text-[10px]" style="width: 42%;">21%</div>
@@ -603,8 +590,8 @@
 
               <div>
                 <div class="flex justify-between mb-1 font-bold">
-                  <span>TRUE TELLTALE-GRADE INTERACTIVE STORY MODE ON F2P MOBILE</span>
-                  <span class="text-[#CC0000]">&lt; 1% MARKET SHARE (UNCRACKED BLUE OCEAN)</span>
+                  <span>TELLTALE-STYLE INTERACTIVE STORY GAMES IN F2P TODAY</span>
+                  <span class="text-[#CC0000]">&lt; 1% OF F2P MARKET</span>
                 </div>
                 <div class="w-full h-6 border border-[#111111] bg-[#E5E5E0]">
                   <div class="h-full bg-[#CC0000] text-white flex items-center justify-end pr-2 text-[10px]" style="width: 6%;">&lt;1%</div>
@@ -613,8 +600,8 @@
 
               <div>
                 <div class="flex justify-between mb-1 font-bold">
-                  <span>LILA SOFT-LAUNCH D1 RETENTION TARGET (FREE EP. 1 HOOK)</span>
-                  <span>40% D1 RETENTION BENCHMARK</span>
+                  <span>TARGET SOFT-LAUNCH D1 RETENTION (FREE EPISODE 1 HOOK)</span>
+                  <span>40% D1 RETENTION (LILA NSM)</span>
                 </div>
                 <div class="w-full h-6 border border-[#111111] bg-[#E5E5E0]">
                   <div class="h-full bg-[#111111] text-white flex items-center justify-end pr-2 text-[10px]" style="width: 85%;">TARGET: 40% D1</div>
@@ -629,7 +616,7 @@
               <span class="font-mono text-xs font-bold uppercase tracking-widest text-[#111111]">
                 FIG. 2.2 — THE 2-MINUTE RULE: CUTTING LEE'S 5-MINUTE DIALOGUE WAIT IN HALF
               </span>
-              <span class="font-mono text-[11px] text-[#CC0000] font-bold">QTE + INTERACTION CADENCE</span>
+              <span class="font-mono text-[11px] text-[#CC0000] font-bold">REMOVING WHITE-SPACE FILLER</span>
             </div>
             <svg viewBox="0 0 760 195" class="w-full h-auto block border border-neutral-300 bg-[#F9F9F7]">
               <line x1="55" y1="30" x2="730" y2="30" stroke="#D4D4D4" stroke-dasharray="4 4"/>
@@ -637,8 +624,8 @@
               <line x1="55" y1="150" x2="730" y2="150" stroke="#111111"/>
 
               <text x="6" y="34" fill="#111111" font-family="JetBrains Mono" font-size="9" font-weight="bold">EDGE OF SEAT</text>
-              <text x="6" y="94" fill="#525252" font-family="JetBrains Mono" font-size="9">WATCHING</text>
-              <text x="6" y="154" fill="#CC0000" font-family="JetBrains Mono" font-size="9" font-weight="bold">DROP-OFF</text>
+              <text x="6" y="94" fill="#525252" font-family="JetBrains Mono" font-size="9">CUTSCENE</text>
+              <text x="6" y="154" fill="#CC0000" font-family="JetBrains Mono" font-size="9" font-weight="bold">BOREDOM DROP</text>
 
               <text x="55" y="175" fill="#111111" font-family="JetBrains Mono" font-size="10" font-weight="bold">0:00</text>
               <text x="185" y="175" fill="#CC0000" font-family="JetBrains Mono" font-size="10" font-weight="bold">2:00 (QTE)</text>
@@ -647,11 +634,9 @@
               <text x="590" y="175" fill="#111111" font-family="JetBrains Mono" font-size="10" font-weight="bold">8:00 (QTE)</text>
               <text x="695" y="175" fill="#111111" font-family="JetBrains Mono" font-size="10" font-weight="bold">10:00</text>
 
-              <!-- Old 5-Min Wait Dashed Curve -->
               <path d="M55,35 Q115,145 185,148 T380,145 L455,35 Q550,148 715,148" fill="none" stroke="#737373" stroke-width="2.5" stroke-dasharray="6 4"/>
               <text x="200" y="138" fill="#525252" font-family="Inter" font-size="10" font-weight="bold">Old 5-Min Wait Between Lee's 4 Options ("White Space Filler")</text>
 
-              <!-- New 2-Minute Edge-of-Seat Solid Curve -->
               <path d="M55,40 L115,80 L185,22 L250,72 L320,26 L390,75 L455,20 L525,72 L590,24 L655,68 L720,18" fill="none" stroke="#CC0000" stroke-width="3.5"/>
               <rect x="180" y="17" width="10" height="10" fill="#111111"/>
               <rect x="315" y="21" width="10" height="10" fill="#CC0000"/>
@@ -668,14 +653,14 @@
       <div class="grid grid-cols-12 border-l border-[#111111]">
         <div class="col-span-12 lg:col-span-4 border-r border-b border-[#111111] p-6 bg-[#F9F9F7] hard-shadow-hover">
           <div class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold mb-2">
-            TWEAK 01 // 2-MINUTE EDGE OF SEAT
+            TWEAK 01 // EVERY 2 MINUTES
           </div>
           <h3 class="font-serif text-2xl font-bold mb-3">Pacing &amp; Quick-Time Events</h3>
           <p class="font-body text-sm leading-relaxed text-justify text-neutral-800 mb-3">
             We need to take into account the short attention span of people and add tweaks to the story based on that. Every 2 minutes we need to keep the viewer on the edge of the seat as he witnesses the story being played out. The more filler scenes which have more white spaces, we remove them from the story and make the calm story-like game into an interactive one which thrives with the viewer's attention.
           </p>
           <p class="font-body text-sm leading-relaxed text-justify text-neutral-800">
-            Keeping the story the same (like Telltale's <em>The Walking Dead</em>) but adding more quick-time events and reducing the gap time between each dialogue: <strong>if Lee gets to choose from 4 options, instead of then waiting again for like 5 mins for another set to come up, cut that in half.</strong> It adds more that the player can do for the game rather than just staring at a screen and watching that cutscene happen.
+            E.g., we can take Telltale's <em>The Walking Dead</em> beautifully designed games, and the story is just wonderful. Keeping the story the same but adding more quick-time events and reducing the gap time between each dialogue: <strong>if Lee gets to choose from 4 options, instead of then waiting again for like 5 mins for another set to come up, cut that in half.</strong> It adds more that the player can do for the game rather than just staring at a screen and watching that cutscene happen. If we could incorporate the high dopamine-inducing activities that relate to the quick-time events with this game, we can keep the player hooked for as long as possible.
           </p>
         </div>
 
@@ -694,35 +679,35 @@
 
         <div class="col-span-12 lg:col-span-4 border-r border-b border-[#111111] p-6 bg-[#F9F9F7] hard-shadow-hover">
           <div class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold mb-2">
-            FIG. 2.3 // PRODUCTION SCOPE MATRIX
+            FIG. 2.3 // PRODUCTION BUDGET
           </div>
           <h3 class="font-serif text-2xl font-bold mb-3">Lesser Budget vs. Expensive Side</h3>
           <p class="font-body text-sm leading-relaxed text-justify text-neutral-800 mb-4">
-            Now, some of these can be expensive to the production to make. Adding more events and more choices can lead to the devs making more different scenarios, which would lead to adding more budget to the game, which can't really be feasible:
+            Now, some of these can be expensive to the production to make. E.g., adding more events and more choices can lead to the devs making more different scenarios, which would lead to adding more budget to the game, which can't really be feasible:
           </p>
           <div class="border border-[#111111] p-3 bg-white mb-3">
             <div class="font-mono text-xs font-bold uppercase text-[#111111]">FOR A LESSER BUDGET:</div>
             <p class="font-body text-xs text-neutral-700 mt-1">
-              We do the <strong>interactivity part of the environment</strong>, as it's just adding a few more actions that the player can do to the environment (such as weapon selection in existing rooms).
+              We can do the <strong>interactivity part of the environment</strong>, as it's just adding a few more actions that the player can do to the environment.
             </p>
           </div>
           <div class="border border-[#111111] p-3 bg-white">
             <div class="font-mono text-xs font-bold uppercase text-[#CC0000]">FOR THE EXPENSIVE SIDE:</div>
             <p class="font-body text-xs text-neutral-700 mt-1">
-              We do the <strong>quick-time events which tailor the story more to the player</strong> and having multiple endings and dialogues.
+              We can do the <strong>quick-time events which tailor the story more to the player</strong> and having multiple endings and dialogues.
             </p>
           </div>
         </div>
       </div>
 
-      <!-- Monetization Strategy + Interactive 10/20 Energy & "Dollars" Ledger Simulator -->
+      <!-- Monetization Strategy + Interactive 10/20 Energy & "Dollars" Store Simulator -->
       <div class="grid grid-cols-12 border-l border-[#111111]">
         <div class="col-span-12 lg:col-span-5 border-r border-b border-[#111111] p-6 bg-[#F9F9F7]">
           <div class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold mb-2">
-            F2P ECONOMY SPECIFICATION
+            FREE-TO-PLAY MONETIZATION STRATEGY
           </div>
           <h3 class="font-serif text-3xl font-bold mb-4">
-            Subtle 10/20 Energy System, Dual-Currency &amp; Zero Forced Ads
+            10/20 Energy Bars, "Dollars" &amp; No Forced Ads
           </h3>
           <p class="font-body text-sm leading-relaxed text-justify text-neutral-800 mb-3">
             To monetize an interactive narrative game effectively without ruining the story, we need to implement a subtle energy system. For example, <strong>starting an episode might cost 10 energy bars out of a maximum capacity of 20</strong>. Once depleted, players would need to replenish their energy either by waiting it out over time or by purchasing more from the in-game store.
@@ -735,12 +720,12 @@
           </p>
         </div>
 
-        <!-- Interactive Economy Ledger Simulator -->
+        <!-- Interactive Economy Simulator -->
         <div class="col-span-12 lg:col-span-7 border-r border-b border-[#111111] p-6 bg-white">
           <div class="flex flex-wrap justify-between items-center border-b-2 border-[#111111] pb-3 mb-4">
             <div>
               <span class="font-mono text-xs font-bold uppercase tracking-widest text-[#CC0000] block">
-                FIG. 2.4 — INTERACTIVE ECONOMY LEDGER
+                FIG. 2.4 — INTERACTIVE ECONOMY TESTER
               </span>
               <h4 class="font-serif text-xl font-bold text-[#111111]">Test the 10/20 Energy Bar &amp; "Dollars" Store</h4>
             </div>
@@ -749,7 +734,6 @@
             </span>
           </div>
 
-          <!-- Energy Pips & Dollars Readout -->
           <div class="border border-[#111111] p-4 bg-[#F9F9F7] mb-4 flex flex-wrap justify-between items-center gap-4">
             <div>
               <div class="font-mono text-xs uppercase tracking-widest font-bold mb-2">
@@ -774,13 +758,12 @@
             </button>
           </div>
 
-          <!-- 4 Store Pillars -->
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-t border-l border-[#111111]">
             <div class="border-r border-b border-[#111111] p-3 bg-[#F9F9F7] flex flex-col justify-between">
               <div>
                 <div class="font-mono text-[10px] uppercase tracking-widest text-neutral-500">COSMETICS // LEE</div>
                 <div class="font-serif font-bold text-base mt-0.5 mb-1">Professor Outfit</div>
-                <p class="font-body text-xs text-neutral-700 mb-3">Unlock a full university professor outfit for Lee.</p>
+                <p class="font-body text-xs text-neutral-700 mb-3">Unlock character outfits, such as a full professor outfit for Lee.</p>
               </div>
               <button onclick="buyStoreItem('Professor Outfit (Lee)', 25)" class="w-full py-1.5 border border-[#111111] font-mono text-xs font-bold uppercase hover:bg-[#111111] hover:text-white transition-colors">
                 BUY ($25)
@@ -791,7 +774,7 @@
               <div>
                 <div class="font-mono text-[10px] uppercase tracking-widest text-neutral-500">COSMETICS // CLEM</div>
                 <div class="font-serif font-bold text-base mt-0.5 mb-1">New Hoodie</div>
-                <p class="font-body text-xs text-neutral-700 mb-3">Unlock a new hoodie for Clementine across episodes.</p>
+                <p class="font-body text-xs text-neutral-700 mb-3">Unlock a new hoodie for Clementine.</p>
               </div>
               <button onclick="buyStoreItem('Clementine Hoodie', 20)" class="w-full py-1.5 border border-[#111111] font-mono text-xs font-bold uppercase hover:bg-[#111111] hover:text-white transition-colors">
                 BUY ($20)
@@ -800,9 +783,9 @@
 
             <div class="border-r border-b border-[#111111] p-3 bg-[#F9F9F7] flex flex-col justify-between">
               <div>
-                <div class="font-mono text-[10px] uppercase tracking-widest text-neutral-500">LOADOUTS</div>
+                <div class="font-mono text-[10px] uppercase tracking-widest text-neutral-500">WEAPON CUSTOMIZATION</div>
                 <div class="font-serif font-bold text-base mt-0.5 mb-1">Weapon Skin Packs</div>
-                <p class="font-body text-xs text-neutral-700 mb-3">Apply throughout the entire game; buy multiple to mix &amp; match.</p>
+                <p class="font-body text-xs text-neutral-700 mb-3">Apply throughout the entire game; buy multiple packs to mix &amp; match custom loadouts.</p>
               </div>
               <button onclick="buyStoreItem('Weapon Skin Pack', 30)" class="w-full py-1.5 border border-[#111111] font-mono text-xs font-bold uppercase hover:bg-[#111111] hover:text-white transition-colors">
                 BUY ($30)
@@ -811,8 +794,8 @@
 
             <div class="border-r border-b border-[#111111] p-3 bg-[#F9F9F7] flex flex-col justify-between">
               <div>
-                <div class="font-mono text-[10px] uppercase tracking-widest text-neutral-500">PROGRESSION</div>
-                <div class="font-serif font-bold text-base mt-0.5 mb-1">Episode Skip</div>
+                <div class="font-mono text-[10px] uppercase tracking-widest text-neutral-500">PROGRESSION SKIPS</div>
+                <div class="font-serif font-bold text-base mt-0.5 mb-1">Unlock Next Episode</div>
                 <p class="font-body text-xs text-neutral-700 mb-3">Spend premium currency to unlock the next episode immediately.</p>
               </div>
               <button onclick="buyStoreItem('Next Episode Unlock', 25)" class="w-full py-1.5 border border-[#111111] font-mono text-xs font-bold uppercase hover:bg-[#111111] hover:text-white transition-colors">
@@ -836,10 +819,10 @@
       <div class="border-b-4 border-[#111111] pb-4 mb-8 flex flex-wrap justify-between items-end gap-4">
         <div>
           <span class="bg-[#CC0000] text-white font-mono text-xs uppercase tracking-widest px-2.5 py-1 font-bold inline-block mb-2">
-            SECTION 03 // QUESTION #3 DELIVERABLE
+            QUESTION #3 // DESIGN SPECIFICATION
           </span>
           <h2 class="font-serif text-4xl sm:text-6xl font-black tracking-tight text-[#111111] leading-none">
-            Design Spec: Roguelike Build &amp; Elemental System
+            True Roguelike Synergy Builds
           </h2>
         </div>
         <div class="font-mono text-xs uppercase tracking-widest text-neutral-500">
@@ -847,15 +830,15 @@
         </div>
       </div>
 
-      <!-- Asymmetric 5-Col / 7-Col Split: Rationale & Full Spec + DPS Curve & Combinatorics Matrix -->
+      <!-- 5-Col / 7-Col Split: Your Exact Draft + DPS Curve & Synergy Table -->
       <div class="grid grid-cols-12 border-t border-l border-[#111111]">
 
         <div class="col-span-12 lg:col-span-5 border-r border-b border-[#111111] p-6 bg-[#F9F9F7]">
           <div class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold border-b border-[#111111] pb-2 mb-4">
-            FEATURE RATIONALE &amp; CORE MECHANICS
+            WHY THIS FEATURE &amp; HOW THE BUILD SYSTEM WORKS
           </div>
           <h3 class="font-serif text-3xl font-bold text-[#111111] leading-tight mb-4">
-            Why Survivor.io Needs True Roguelike Build Randomness
+            Making Every Run New So You Aren't Just Dodging and Running
           </h3>
           <p class="font-body text-base leading-relaxed text-justify text-neutral-800 drop-cap mb-4">
             Let's take <strong>Survivor.io</strong> as an example and to add a new interactive feature to it, I would honestly go for a roguelike-ish combat system, it still being fully automated but every run is new for the player. He would need to have a starter weapon and he'll need a build for that, so he starts off with a certain ability and we would have it so that <strong>none of the builds can ever be the same</strong>, adding that very randomness every time. It would engage the player a lot, as a survival game can get boring pretty fast, and you're not even doing the combat—you're just dodging and running. Adding a build system would be very beneficial.
@@ -871,9 +854,9 @@
           <div class="border border-[#111111] p-5 bg-white mb-6">
             <div class="flex flex-wrap justify-between items-center border-b border-[#111111] pb-2 mb-3">
               <span class="font-mono text-xs font-bold uppercase tracking-widest text-[#111111]">
-                FIG. 3.1 — 2x MULTIPLYING MISSILE (1.0S COOLDOWN) VS. SILENT WATER KUNAI CURVE
+                FIG. 3.1 — OVERPOWERED MISSILE CAST (2x PER HIT + 1 SEC COOLDOWN) VS. WATER KUNAI
               </span>
-              <span class="font-mono text-[11px] text-[#CC0000] font-bold">BEHAVIORAL DPS TELEMETRY</span>
+              <span class="font-mono text-[11px] text-[#CC0000] font-bold">BUILD COMPARISON</span>
             </div>
             <svg viewBox="0 0 760 195" class="w-full h-auto block border border-neutral-300 bg-[#F9F9F7]">
               <line x1="55" y1="30" x2="730" y2="30" stroke="#D4D4D4" stroke-dasharray="4 4"/>
@@ -881,53 +864,53 @@
               <line x1="55" y1="155" x2="730" y2="155" stroke="#111111"/>
 
               <text x="6" y="34" fill="#CC0000" font-family="JetBrains Mono" font-size="9" font-weight="bold">2x HIT SPIKE</text>
-              <text x="6" y="94" fill="#111111" font-family="JetBrains Mono" font-size="9" font-weight="bold">SUSTAIN DPS</text>
-              <text x="6" y="158" fill="#525252" font-family="JetBrains Mono" font-size="9">1.0s PAUSE</text>
+              <text x="6" y="94" fill="#111111" font-family="JetBrains Mono" font-size="9" font-weight="bold">STEADY DPS</text>
+              <text x="6" y="158" fill="#525252" font-family="JetBrains Mono" font-size="9">1s COOLDOWN</text>
 
-              <!-- Standard Survivor.io Flat Line -->
               <line x1="55" y1="140" x2="720" y2="105" stroke="#737373" stroke-width="2" stroke-dasharray="5 5"/>
-              <text x="495" y="125" fill="#525252" font-family="Inter" font-size="10">Default Survivor.io (+10% Flat Stat Curve)</text>
+              <text x="495" y="125" fill="#525252" font-family="Inter" font-size="10">Normal Survivor.io Flat Stat Upgrades</text>
 
-              <!-- Multiplying Missile Curve (1 -> 2 -> 4 -> 8 -> 16 then 1s Cooldown Drop) -->
               <path d="M55,150 L110,130 L160,95 L210,48 L250,18 L265,155 L330,155 L380,128 L430,88 L480,38 L520,15 L535,155 L600,155 L660,92 L720,20" fill="none" stroke="#CC0000" stroke-width="3.5"/>
-              <text x="115" y="25" fill="#CC0000" font-family="Inter" font-size="10" font-weight="bold">Multiplying Missile Cast (Doubles Every Hit &rarr; Stops 1.0s Cooldown)</text>
+              <text x="115" y="25" fill="#CC0000" font-family="Inter" font-size="10" font-weight="bold">Multiplying Missile Cast (Doubles Every Hit &rarr; Stops 1 Sec Cooldown)</text>
 
-              <!-- Silent Water Kunai Curve -->
               <path d="M55,145 Q200,78 380,66 T720,46" fill="none" stroke="#111111" stroke-width="3"/>
-              <text x="405" y="58" fill="#111111" font-family="Inter" font-size="10" font-weight="bold">Kunai + Water (Silent Piercing + Slowing Puddles)</text>
+              <text x="405" y="58" fill="#111111" font-family="Inter" font-size="10" font-weight="bold">Kunai + Water (Silent Deadly Piercing + Slowing Puddles)</text>
             </svg>
           </div>
 
-          <!-- Fig. 3.2 Elemental x Weapon Combinatorics Table -->
+          <!-- Fig. 3.2 Elemental x Weapon Table (From Obsidian Note 01) -->
           <div class="border border-[#111111] p-5 bg-white">
             <div class="flex flex-wrap justify-between items-center border-b border-[#111111] pb-2 mb-3">
               <span class="font-mono text-xs font-bold uppercase tracking-widest text-[#111111]">
-                FIG. 3.2 — ELEMENTAL GRAFTING &amp; SECONDARY PIVOT MATRIX
+                FIG. 3.2 — DETAILED DESIGN: THE ELEMENTAL SYNERGY SYSTEM
               </span>
-              <span class="font-mono text-[11px] text-neutral-500">CURATED SPECIFICATION TABLE</span>
+              <span class="font-mono text-[11px] text-neutral-500">FROM OBSIDIAN NOTE 01</span>
             </div>
+            <p class="font-body text-xs text-neutral-700 mb-3">
+              <strong>The Draft Mechanics:</strong> When leveling up, the game doesn't just offer random weapons; it offers elements (Water, Fire, Lightning) that can fuse with what you already have so you aren't just clicking whatever upgrade has the highest damage number.
+            </p>
             <div class="overflow-x-auto">
               <table class="w-full border-collapse border border-[#111111] text-left font-body text-xs">
                 <thead>
                   <tr class="bg-[#111111] text-white font-mono uppercase tracking-wider">
-                    <th class="border border-[#111111] p-2.5">Weapon / Ability Slot</th>
-                    <th class="border border-[#111111] p-2.5">Base Behavior</th>
-                    <th class="border border-[#111111] p-2.5">+ Water Element Synergy</th>
-                    <th class="border border-[#111111] p-2.5">+ High-DPS / Fire Pivot</th>
+                    <th class="border border-[#111111] p-2.5">Starter / Pivot Weapon</th>
+                    <th class="border border-[#111111] p-2.5">Base Attack</th>
+                    <th class="border border-[#111111] p-2.5">+ Water Element Fusion</th>
+                    <th class="border border-[#111111] p-2.5">Alternative Build Pivot</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr class="bg-[#F9F9F7]">
-                    <td class="border border-[#111111] p-2.5 font-bold">Kunai (Starter Throwable)</td>
-                    <td class="border border-[#111111] p-2.5">Fast directional throwing base attack.</td>
-                    <td class="border border-[#111111] p-2.5 bg-neutral-200/70"><strong>Silent Water Kunai:</strong> Zero-tracer silent knives, +2 Pierce, leaves slowing water puddles on impact.</td>
-                    <td class="border border-[#111111] p-2.5"><strong>Single-Strike Throwable:</strong> High-DPS single-target critical strike throwable build for bosses.</td>
+                    <td class="border border-[#111111] p-2.5 font-bold">Kunai (Starter Weapon)</td>
+                    <td class="border border-[#111111] p-2.5">Basic throwing base attack.</td>
+                    <td class="border border-[#111111] p-2.5 bg-neutral-200/70"><strong>"The Silent Water Kunai":</strong> Kunais combine with Water—piercing enemies and leaving slowing water puddles behind.</td>
+                    <td class="border border-[#111111] p-2.5"><strong>High-DPS Single-Strike:</strong> Lean into a high-DPS, single-strike throwable build.</td>
                   </tr>
                   <tr class="bg-white">
-                    <td class="border border-[#111111] p-2.5 font-bold">Multiplying Missile (Mid-Run Pivot)</td>
-                    <td class="border border-[#111111] p-2.5">Secondary cast that can overtake your starter weapon as your main build.</td>
-                    <td class="border border-[#111111] p-2.5"><strong>Tidal Salvo:</strong> Projectiles double on hit and splash slowing water zones before the 1s cooldown.</td>
-                    <td class="border border-[#111111] p-2.5 bg-neutral-200/70"><strong class="text-[#CC0000]">Overpowered Missile Cast:</strong> Doubles projectiles after every hit (1&rarr;2&rarr;4&rarr;8) and stops for 1.0s cooldown.</td>
+                    <td class="border border-[#111111] p-2.5 font-bold">Multiplying Missile Cast</td>
+                    <td class="border border-[#111111] p-2.5">Secondary cast that can become your main damage dealer instead of your starter weapon.</td>
+                    <td class="border border-[#111111] p-2.5"><strong>Water Missile Splash:</strong> Doubling missiles leave slowing puddles across the horde before the 1s cooldown.</td>
+                    <td class="border border-[#111111] p-2.5 bg-neutral-200/70"><strong class="text-[#CC0000]">Overpowered 2x Missile Cast:</strong> Doubles projectiles after every hit, balanced by a strict 1-second cooldown.</td>
                   </tr>
                 </tbody>
               </table>
@@ -942,10 +925,10 @@
         <div class="flex flex-wrap justify-between items-center border-b-2 border-[#111111] pb-3 mb-6">
           <div>
             <span class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold block">
-              UX SPECIFICATION // VISUAL WIREFRAMES
+              VISUAL USER EXPERIENCE // 3 KEY WIREFRAMES
             </span>
             <h3 class="font-serif text-3xl font-bold text-[#111111]">
-              3 Key Screen Mockups &amp; Interactive Draft Wireframe
+              Starter Selection, Level-Up Synergy Draft &amp; In-Run HUD
             </h3>
           </div>
           <span class="font-mono text-xs uppercase tracking-widest text-neutral-500">
@@ -953,23 +936,22 @@
           </span>
         </div>
 
-        <!-- 3 Mobile Screen Wireframes Grid -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
 
           <!-- Wireframe 1 -->
           <div class="border-2 border-[#111111] bg-white p-4 flex flex-col justify-between hard-shadow-hover">
             <div>
               <div class="flex justify-between items-center border-b border-[#111111] pb-2 mb-3 font-mono text-[11px] uppercase tracking-widest">
-                <span class="font-bold">FIG. 3.3 // SCREEN 01</span>
-                <span class="text-neutral-500">PRE-RUN LOADOUT</span>
+                <span class="font-bold">WIREFRAME 01</span>
+                <span class="text-neutral-500">PRE-RUN</span>
               </div>
-              <h4 class="font-serif text-xl font-bold mb-3 text-center">Starter Weapon Select</h4>
+              <h4 class="font-serif text-xl font-bold mb-3 text-center">Select Starter Weapon</h4>
               <div class="border border-[#111111] p-3 bg-[#F9F9F7] mb-3">
                 <div class="flex items-center gap-3">
                   <div class="w-12 h-12 border border-[#111111] wf-cross-box flex items-center justify-center font-mono text-xs font-bold">KUNAI</div>
                   <div>
                     <div class="font-mono text-xs font-bold uppercase">STARTER: KUNAI</div>
-                    <p class="font-body text-xs text-neutral-600">Sets initial throwing attack. Can fuse with elements mid-run.</p>
+                    <p class="font-body text-xs text-neutral-600">Gives you a basic throwing base attack. Can fuse with elements mid-run.</p>
                   </div>
                 </div>
               </div>
@@ -978,12 +960,12 @@
                   ELEMENT SLOT<br><strong class="text-[#CC0000]">[ EMPTY ]</strong>
                 </div>
                 <div class="border border-dashed border-[#111111] p-2.5 bg-[#F9F9F7]">
-                  PIVOT CAST<br><strong>[ RNG POOL ]</strong>
+                  MAIN BUILD PIVOT<br><strong>[ OPEN ]</strong>
                 </div>
               </div>
             </div>
             <div class="bg-[#111111] text-white text-center font-mono text-xs uppercase tracking-widest py-2.5 font-bold">
-              START SURVIVAL RUN
+              START RUN
             </div>
           </div>
 
@@ -991,16 +973,16 @@
           <div class="border-2 border-[#111111] bg-white p-4 flex flex-col justify-between hard-shadow-hover">
             <div>
               <div class="flex justify-between items-center border-b border-[#111111] pb-2 mb-3 font-mono text-[11px] uppercase tracking-widest">
-                <span class="font-bold text-[#CC0000]">FIG. 3.4 // SCREEN 02</span>
-                <span class="text-neutral-500">MID-RUN DRAFT MODAL</span>
+                <span class="font-bold text-[#CC0000]">WIREFRAME 02</span>
+                <span class="text-neutral-500">LEVEL UP DRAFT</span>
               </div>
-              <h4 class="font-serif text-xl font-bold mb-3 text-center">LEVEL UP! Choose Upgrade</h4>
+              <h4 class="font-serif text-xl font-bold mb-3 text-center">LEVEL UP! Choose an Upgrade</h4>
               <div class="border-2 border-[#111111] p-2.5 bg-[#F9F9F7] mb-2">
                 <div class="flex justify-between items-center font-mono text-xs font-bold">
                   <span>WATER ELEMENT</span>
                   <span class="bg-[#CC0000] text-white px-1.5 py-0.5 text-[10px]">+ SYNERGY!</span>
                 </div>
-                <p class="font-body text-xs text-neutral-700 mt-1">Fuses with Kunai &rarr; Silent Water Kunai (+Pierce &amp; Slow).</p>
+                <p class="font-body text-xs text-neutral-700 mt-1">Fuses with your weapons to add Piercing and Slow (Kunai + Water = "Silent Water Kunai").</p>
               </div>
               <div class="border border-[#111111] p-2.5 bg-white mb-3">
                 <div class="flex justify-between items-center font-mono text-xs font-bold">
@@ -1011,7 +993,7 @@
               </div>
             </div>
             <div class="grid grid-cols-2 gap-2 font-mono text-xs">
-              <div class="border border-[#111111] py-2 text-center font-bold">Reroll (100 Gems)</div>
+              <div class="border border-[#111111] py-2 text-center font-bold">Reroll (uses 100 Gems)</div>
               <div class="border border-[#111111] py-2 text-center">Skip</div>
             </div>
           </div>
@@ -1020,41 +1002,41 @@
           <div class="border-2 border-[#111111] bg-white p-4 flex flex-col justify-between hard-shadow-hover">
             <div>
               <div class="flex justify-between items-center border-b border-[#111111] pb-2 mb-3 font-mono text-[11px] uppercase tracking-widest">
-                <span class="font-bold">FIG. 3.5 // SCREEN 03</span>
-                <span class="text-neutral-500">ACTIVE COMBAT HUD</span>
+                <span class="font-bold">WIREFRAME 03</span>
+                <span class="text-neutral-500">IN-RUN HUD</span>
               </div>
-              <h4 class="font-serif text-xl font-bold mb-3 text-center">In-Run Synergy Telemetry</h4>
+              <h4 class="font-serif text-xl font-bold mb-3 text-center">Active Build &amp; Cooldown HUD</h4>
               <div class="h-28 border border-[#111111] halftone-bg relative mb-3 p-2 flex flex-col justify-between">
                 <div class="bg-white border border-[#111111] px-2 py-0.5 font-mono text-[10px] inline-block self-start">
-                  SLOW PUDDLE ZONE (ACTIVE)
+                  SLOWING WATER PUDDLE
                 </div>
                 <div class="bg-[#111111] text-white px-2 py-0.5 font-mono text-[10px] inline-block self-end">
-                  MISSILE CHAIN: 2 &rarr; 4 &rarr; 8x HIT!
+                  MISSILES: 2 &rarr; 4 &rarr; 8x HIT!
                 </div>
               </div>
               <div class="font-mono text-xs space-y-1 mb-3">
-                <div><strong>Weapon 1:</strong> Silent Water Kunai (Piercing)</div>
-                <div><strong>Main Build:</strong> 2x Missile <span class="text-[#CC0000] font-bold">[1.0s CD PAUSE]</span></div>
+                <div><strong>Starter:</strong> Silent Water Kunai (Pierce + Slow)</div>
+                <div><strong>Main Build:</strong> 2x Missile <span class="text-[#CC0000] font-bold">[1.0s COOLDOWN]</span></div>
               </div>
             </div>
             <div class="border border-[#111111] bg-[#E5E5E0] text-center font-mono text-xs uppercase tracking-widest py-2 font-bold">
-              ONE-HANDED THUMB DODGE ZONE
+              MOVEMENT / DODGE ZONE
             </div>
           </div>
 
         </div>
 
-        <!-- Interactive Full-Width Level-Up Wireframe Simulator -->
+        <!-- Interactive Wireframe #2 Tester -->
         <div class="border-2 border-[#111111] bg-white p-6">
           <div class="flex flex-wrap justify-between items-center border-b border-[#111111] pb-3 mb-4">
             <div>
               <span class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold">
-                INTERACTIVE WIREFRAME SIMULATOR // TEST REROLL &amp; SYNERGY SELECTION
+                INTERACTIVE WIREFRAME #2 // CLICK TO TEST REROLL &amp; UPGRADE SELECTION
               </span>
               <h4 class="font-serif text-2xl font-bold text-[#111111]">LEVEL UP! Choose an Upgrade</h4>
             </div>
             <span id="wf-status-text" class="font-mono text-xs uppercase tracking-widest bg-[#F9F9F7] border border-[#111111] px-3 py-1 font-bold">
-              EQUIPPED STARTER: [KUNAI LV.3]
+              DRAFT YOUR PATH... (STARTER: KUNAI)
             </span>
           </div>
 
@@ -1062,10 +1044,10 @@
 
           <div class="flex flex-wrap justify-center gap-4 border-t border-[#111111] pt-4">
             <button onclick="rerollWireframePool()" class="min-h-[44px] px-6 py-2 bg-[#111111] text-white border border-[#111111] hover:bg-white hover:text-[#111111] font-mono text-xs font-bold uppercase tracking-widest transition-all">
-              REROLL POOL (USES 100 GEMS)
+              Reroll (uses 100 Gems)
             </button>
-            <button onclick="selectWireframeUpgrade('SKIPPED (+20% GOLD)')" class="min-h-[44px] px-6 py-2 border border-[#111111] bg-transparent hover:bg-[#111111] hover:text-white font-mono text-xs font-bold uppercase tracking-widest transition-all">
-              SKIP DRAFT
+            <button onclick="selectWireframeUpgrade('SKIPPED')" class="min-h-[44px] px-6 py-2 border border-[#111111] bg-transparent hover:bg-[#111111] hover:text-white font-mono text-xs font-bold uppercase tracking-widest transition-all">
+              Skip
             </button>
           </div>
         </div>
@@ -1077,47 +1059,49 @@
     </section>
 
     <!-- =======================================================
-         SECTION 04: AI TOOLCHAIN, ASSUMPTIONS & WARTIME WORKFLOW
+         SECTION 04: NOTES, ASSUMPTIONS & HOW I USED AI
          ======================================================= -->
     <section id="sec-3" class="edition-section pt-8 newsprint-texture">
       <div class="border-b-4 border-[#111111] pb-4 mb-8 flex flex-wrap justify-between items-end gap-4">
         <div>
           <span class="bg-[#111111] text-white font-mono text-xs uppercase tracking-widest px-2.5 py-1 font-bold inline-block mb-2">
-            SECTION 04 // METHODOLOGY &amp; TRANSPARENCY
+            SECTION 04 // TRANSPARENCY NOTE
           </span>
           <h2 class="font-serif text-4xl sm:text-6xl font-black tracking-tight text-[#111111] leading-none">
-            Assumptions, LILA Values &amp; AI Curation
+            Notes, Assumptions &amp; How I Used AI
           </h2>
         </div>
         <div class="font-mono text-xs uppercase tracking-widest text-neutral-500">
-          RADICAL TRUTH &amp; ACTUAL WORK OVER SLIDES
+          WHAT I WROTE MYSELF VS. HOW AI HELPED
         </div>
       </div>
 
       <div class="grid grid-cols-12 border-t border-l border-[#111111]">
         <div class="col-span-12 lg:col-span-6 border-r border-b border-[#111111] p-6 bg-[#F9F9F7]">
           <div class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold mb-2">
-            01 // HUMAN DESIGN VS. AI ACCELERATION
+            01 // WHAT I WROTE &amp; BUILT MYSELF
           </div>
-          <h3 class="font-serif text-2xl font-bold mb-3">What I Wrote &amp; Built Myself</h3>
+          <h3 class="font-serif text-2xl font-bold mb-3">My Own Game Design Notes &amp; Prototype</h3>
           <p class="font-body text-sm leading-relaxed text-justify text-neutral-800 mb-3">
-            Every core game design thesis and prototype in this submission comes directly from my own work: the <strong>Spin to Lose</strong> Unity URP 3D psychological horror slot machine prototype (built with custom HLSL posterization, 6 shackles, body-part sacrifice risk/reward, and 5 odds-rigging cards), why the App Store top 100 feels like fast-dopamine slop compared to Telltale's <em>The Walking Dead</em>, cutting Lee's 5-minute dialogue wait in half with 2-minute QTE spikes, the 10/20 Energy Bar + "Dollars" economy with zero forced mid-episode ads, and the <em>Survivor.io</em> Kunai + Water and Multiplying Missile (2x per hit with a 1-second cooldown) build system.
+            Everything in this test comes from my own projects and my <strong>Re-collection</strong> Obsidian vault:
           </p>
-          <p class="font-body text-sm leading-relaxed text-justify text-neutral-800">
-            I used AI coding tools (Claude Code and Gemini) to help package my Unity WebGL build into this Newsprint broadsheet layout and render my Obsidian notes and data into interactive SVG charts and wireframes.
-          </p>
+          <ul class="font-body text-sm leading-relaxed text-neutral-800 space-y-2 list-disc pl-5">
+            <li><strong>Question #1 (Spin to Lose):</strong> Built in Unity URP with a 3-person team for the Juniper Devs Game Jam. All 3D models (Blender), pixel art textures (Aseprite), and audio/voice lines (Audacity + LMMS) were made by hand without AI.</li>
+            <li><strong>Question #2 (Story Mode F2P):</strong> Written from my own analysis of Telltale's <em>The Walking Dead, Batman, and Borderlands</em>—cutting the 5-minute dialogue gap in half with 2-minute QTEs, adding weapon choices in the environment for a lower budget, and using a 10/20 Energy Bar + Dollars store with zero forced ads during episodes.</li>
+            <li><strong>Question #3 (Survivor.io Builds):</strong> Written from my own draft on why auto-attacking survival games get boring when you just dodge and run, adding Kunai + Water ("Silent Water Kunai") and the Multiplying Missile cast (doubles after every hit with a 1-second cooldown).</li>
+          </ul>
         </div>
 
         <div class="col-span-12 lg:col-span-6 border-r border-b border-[#111111] p-6 bg-[#F9F9F7]">
           <div class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold mb-2">
-            02 // ALIGNMENT WITH LILA GAMES BUSINESS VALUES
+            02 // HOW I USED AI
           </div>
-          <h3 class="font-serif text-2xl font-bold mb-3">Action Plans &amp; Actual Work Over Slides</h3>
+          <h3 class="font-serif text-2xl font-bold mb-3">Code, Shaders &amp; Building This Web Page</h3>
           <p class="font-body text-sm leading-relaxed text-justify text-neutral-800 mb-3">
-            In LILA's Business Values presentation, <strong>Blind Positivity</strong> is defined as producing "executive readouts and PowerPoint slides," whereas true <strong>Optimism</strong> is defined as: <em>Admit Problem &rarr; Root Cause Analysis &rarr; Deep Thinking &rarr; Find a Solution &rarr; Action Plan (Lots of task lists and actual work)</em>.
+            In LILA's Business Values PDF (Slide 42), <strong>Blind Positivity</strong> is defined as making "executive readouts and PowerPoint slides," while real <strong>Optimism</strong> is "Admit Problem &rarr; Root Cause Analysis &rarr; Deep Thinking &rarr; Find a Solution &rarr; Action Plan (Lots of task lists and actual work)."
           </p>
           <p class="font-body text-sm leading-relaxed text-justify text-neutral-800">
-            Rather than sending a static text file, I built this interactive broadsheet so reviewers can directly play the Unity WebGL build of <em>Spin to Lose</em>, test the Question #2 10/20 Energy economy math, click through the Question #3 Level-Up draft wireframes, and inspect my raw Obsidian research vault.
+            Instead of submitting a plain Google Doc, I used AI coding tools (Claude Code and Gemini) to help me write the ~20-line HLSL posterization shader and C# scripts for <em>Spin to Lose</em>, and to code this newspaper-style HTML page so you can play the Unity WebGL build, test my Question #2 energy store, and click through my Question #3 wireframes and Obsidian notes in one place.
           </p>
         </div>
       </div>
@@ -1134,14 +1118,14 @@
       <div class="border-b-4 border-[#111111] pb-4 mb-8 flex flex-wrap justify-between items-end gap-4">
         <div>
           <span class="bg-[#CC0000] text-white font-mono text-xs uppercase tracking-widest px-2.5 py-1 font-bold inline-block mb-2">
-            SECTION 05 // PRIMARY RESEARCH ARCHIVE
+            SECTION 05 // MY OBSIDIAN VAULT &amp; REFERENCES
           </span>
           <h2 class="font-serif text-4xl sm:text-6xl font-black tracking-tight text-[#111111] leading-none">
             Obsidian Vault ("Re-collection") &amp; Sources
           </h2>
         </div>
         <div class="font-mono text-xs uppercase tracking-widest text-neutral-500">
-          FIG. 5.1 — INTERACTIVE VAULT EXPLORER &amp; LINKED NODE GRAPH
+          CLICK ANY NOTE OR GRAPH NODE TO READ MY RAW NOTES
         </div>
       </div>
 
@@ -1161,34 +1145,35 @@
             <div class="text-[11px] text-neutral-500 space-y-1 mb-3 pl-2 border-l border-neutral-400">
               <div>2026-10-12</div>
               <div class="flex justify-between"><span>LILA Games Values</span><span>[PDF]</span></div>
-              <div class="flex justify-between"><span>SpinToLose_Playbook</span><span>[DOCX]</span></div>
-              <div class="flex justify-between"><span>Pasted image 20261011...</span><span>[PNG]</span></div>
+              <div class="flex justify-between"><span>Pasted image 20261011182845</span><span>[PNG]</span></div>
+              <div class="flex justify-between"><span>Pasted image 20261011183347</span><span>[PNG]</span></div>
+              <div class="flex justify-between"><span>Pasted image 20261012144800</span><span>[PNG]</span></div>
             </div>
 
             <div class="font-bold uppercase tracking-widest text-[#111111] border-b border-[#111111] pb-1.5 mb-2">
-              RESEARCH NOTES (CLICK TO READ)
+              VAULT NOTES (CLICK TO VIEW)
             </div>
             <div class="space-y-1">
               <button onclick="selectObsidianNote(0)" class="obs-file-item w-full text-left px-2.5 py-2 border border-[#111111] bg-[#111111] text-white font-bold transition-colors">
-                01. Question 3 Design Spec
+                Question 3 Design Specification
               </button>
               <button onclick="selectObsidianNote(1)" class="obs-file-item w-full text-left px-2.5 py-2 border border-transparent hover:border-[#111111] text-[#111111] transition-colors">
-                02. Roguelike game analysis (Hades)
+                Roguelike game analysis
               </button>
               <button onclick="selectObsidianNote(2)" class="obs-file-item w-full text-left px-2.5 py-2 border border-transparent hover:border-[#111111] text-[#111111] transition-colors">
-                03. telltale studio analysis
+                telltale studio analysis
               </button>
               <button onclick="selectObsidianNote(3)" class="obs-file-item w-full text-left px-2.5 py-2 border border-transparent hover:border-[#111111] text-[#111111] transition-colors">
-                04. why telltale doesnt work as f2p
+                why telltale doesnt work as f2p mobile game
               </button>
               <button onclick="selectObsidianNote(4)" class="obs-file-item w-full text-left px-2.5 py-2 border border-transparent hover:border-[#111111] text-[#111111] transition-colors">
-                05. Lila games case study
+                Lila games case study
               </button>
               <button onclick="selectObsidianNote(5)" class="obs-file-item w-full text-left px-2.5 py-2 border border-transparent hover:border-[#111111] text-[#111111] transition-colors">
-                06. Marketing F2P for telltale
+                Marketing F2P for telltale case study
               </button>
               <button onclick="selectObsidianNote(6)" class="obs-file-item w-full text-left px-2.5 py-2 border border-transparent hover:border-[#111111] text-[#111111] transition-colors">
-                07. Question 2 Gameplay Strategy
+                Question 2 Gameplay Insights &amp; Strategy
               </button>
             </div>
           </div>
@@ -1199,57 +1184,57 @@
           <!-- Right 4 Cols: Interactive Linked Node Graph -->
           <div class="col-span-12 lg:col-span-4 p-4 bg-[#111111] text-white flex flex-col justify-between">
             <div class="flex justify-between items-center border-b border-neutral-700 pb-2 mb-2 font-mono text-[11px] uppercase tracking-widest">
-              <span id="obs-graph-label" class="text-[#F9F9F7]">GRAPH VIEW // LINKED CONSTELLATION</span>
+              <span id="obs-graph-label" class="text-[#F9F9F7]">GRAPH OF LINKED NOTES</span>
               <span class="text-[#CC0000] font-bold">CLICK NODES</span>
             </div>
             <canvas id="obsidian-graph-canvas" width="340" height="410" class="w-full h-[410px] block cursor-pointer"></canvas>
             <div class="font-mono text-[10px] text-neutral-400 text-center pt-2 border-t border-neutral-800">
-              Fig. 5.1 — Exact 7-node constellation from the Re-collection Obsidian vault.
+              Fig. 5.1 — Node graph from my Re-collection Obsidian vault.
             </div>
           </div>
         </div>
       </div>
 
-      <!-- 4 Archival Obsidian Screenshot Plates (Grayscale by Default -> Sepia on Hover) -->
+      <!-- 4 Obsidian Vault Screenshots -->
       <div class="mb-8">
         <div class="font-mono text-xs uppercase tracking-widest font-bold text-[#111111] border-b-2 border-[#111111] pb-2 mb-4 flex justify-between">
-          <span>ARCHIVAL PHOTOGRAPHIC PLATES // RAW OBSIDIAN VAULT CAPTURES</span>
-          <span>HOVER TO DEVELOP PLATE (GRAYSCALE &rarr; SEPIA)</span>
+          <span>MY OBSIDIAN VAULT SCREENSHOTS (RE-COLLECTION)</span>
+          <span>CLICK ANY SCREENSHOT TO LOAD THE NOTE ABOVE</span>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-t border-l border-[#111111]">
           <div onclick="selectObsidianNote(0)" class="border-r border-b border-[#111111] p-3 bg-[#F9F9F7] cursor-pointer hard-shadow-hover">
-            <img src="Screenshot 2026-10-15 034002.png" alt="Obsidian Vault Question 3 Design Specification" class="w-full h-40 object-cover border border-[#111111] grayscale hover:sepia-[50%] transition-all duration-200 mb-2">
-            <div class="font-mono text-[11px] font-bold uppercase">Fig. 5.2 — Question 3 Spec Note</div>
-            <div class="font-body text-xs text-neutral-600">Raw draft &amp; linked graph view.</div>
+            <img src="Screenshot 2026-10-15 034002.png" alt="Obsidian Vault Question 3 Design Specification" onerror="this.style.display='none'" class="w-full h-40 object-cover border border-[#111111] grayscale hover:sepia-[50%] transition-all duration-200 mb-2">
+            <div class="font-mono text-[11px] font-bold uppercase">01 // Question 3 Design Specification</div>
+            <div class="font-body text-xs text-neutral-600">346 words, 2,149 characters.</div>
           </div>
 
           <div onclick="selectObsidianNote(1)" class="border-r border-b border-[#111111] p-3 bg-[#F9F9F7] cursor-pointer hard-shadow-hover">
-            <img src="Screenshot 2026-10-15 034007.jpg" alt="Obsidian Vault Roguelike Game Analysis Hades" class="w-full h-40 object-cover border border-[#111111] grayscale hover:sepia-[50%] transition-all duration-200 mb-2">
-            <div class="font-mono text-[11px] font-bold uppercase">Fig. 5.3 — Hades Analysis Note</div>
-            <div class="font-body text-xs text-neutral-600">Pact of Punishment (0–57 Heat).</div>
+            <img src="Screenshot 2026-10-15 034007.jpg" alt="Obsidian Vault Roguelike Game Analysis Hades" onerror="this.style.display='none'" class="w-full h-40 object-cover border border-[#111111] grayscale hover:sepia-[50%] transition-all duration-200 mb-2">
+            <div class="font-mono text-[11px] font-bold uppercase">02 // Roguelike game analysis (Hades)</div>
+            <div class="font-body text-xs text-neutral-600">225 words, 1,209 characters.</div>
           </div>
 
           <div onclick="selectObsidianNote(2)" class="border-r border-b border-[#111111] p-3 bg-[#F9F9F7] cursor-pointer hard-shadow-hover">
-            <img src="Screenshot 2026-10-15 034010.png" alt="Obsidian Vault Telltale Studio Analysis" class="w-full h-40 object-cover border border-[#111111] grayscale hover:sepia-[50%] transition-all duration-200 mb-2">
-            <div class="font-mono text-[11px] font-bold uppercase">Fig. 5.4 — Telltale Studio Note</div>
-            <div class="font-body text-xs text-neutral-600">Telltale Tool &amp; "First Taste is Free".</div>
+            <img src="Screenshot 2026-10-15 034010.png" alt="Obsidian Vault Telltale Studio Analysis" onerror="this.style.display='none'" class="w-full h-40 object-cover border border-[#111111] grayscale hover:sepia-[50%] transition-all duration-200 mb-2">
+            <div class="font-mono text-[11px] font-bold uppercase">03 // telltale studio analysis</div>
+            <div class="font-body text-xs text-neutral-600">402 words, 2,628 characters.</div>
           </div>
 
           <div onclick="selectObsidianNote(3)" class="border-r border-b border-[#111111] p-3 bg-[#F9F9F7] cursor-pointer hard-shadow-hover">
-            <img src="Screenshot 2026-10-15 034013.png" alt="Obsidian Vault Why Telltale Doesn't Work as F2P Mobile Game" class="w-full h-40 object-cover border border-[#111111] grayscale hover:sepia-[50%] transition-all duration-200 mb-2">
-            <div class="font-mono text-[11px] font-bold uppercase">Fig. 5.5 — Telltale F2P Failure</div>
-            <div class="font-body text-xs text-neutral-600">Why "Spend 30 Gems" breaks drama.</div>
+            <img src="Screenshot 2026-10-15 034013.png" alt="Obsidian Vault Why Telltale Doesn't Work as F2P Mobile Game" onerror="this.style.display='none'" class="w-full h-40 object-cover border border-[#111111] grayscale hover:sepia-[50%] transition-all duration-200 mb-2">
+            <div class="font-mono text-[11px] font-bold uppercase">04 // why telltale doesnt work as f2p</div>
+            <div class="font-body text-xs text-neutral-600">522 words, 3,703 characters.</div>
           </div>
         </div>
       </div>
 
-      <!-- Complete 6-Source Bibliography Grid -->
+      <!-- Sources & References Grid -->
       <div class="grid grid-cols-12 border-t border-l border-[#111111]">
         <div class="col-span-12 md:col-span-4 border-r border-b border-[#111111] p-5 bg-[#F9F9F7] hard-shadow-hover">
-          <div class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold mb-1">SOURCE 01 // PROGRESSION</div>
+          <div class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold mb-1">SOURCE 01 // PROGRESSION &amp; THEME</div>
           <h4 class="font-serif text-xl font-bold mb-2">Hades Website &amp; Game (Supergiant)</h4>
           <p class="font-body text-xs leading-relaxed text-justify text-neutral-700 mb-3">
-            Analyzed the <strong>Pact of Punishment (0 to 57 Heat, record 52)</strong>, refundable abilities, Keepsakes, and Companions in my Obsidian vault to design a metagame where players scale their own difficulty instead of hitting a paywall grind.
+            Used <em>Hades</em> for my roguelike progression analysis in Obsidian: how the <strong>Pact of Punishment (0 to 57 Heat, record 52)</strong>, refundable abilities, Keepsakes, and Companions let players choose their own difficulty at a granular level instead of forcing a stupid long grind.
           </p>
           <a href="https://www.supergiantgames.com/games/hades/" target="_blank" rel="noopener" class="font-mono text-xs font-bold text-[#111111] underline-offset-4 decoration-2 decoration-[#CC0000] hover:underline">
             supergiantgames.com/games/hades &rarr;
@@ -1258,56 +1243,56 @@
 
         <div class="col-span-12 md:col-span-4 border-r border-b border-[#111111] p-5 bg-[#F9F9F7] hard-shadow-hover">
           <div class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold mb-1">SOURCE 02 // PRODUCTION CYCLE</div>
-          <h4 class="font-serif text-xl font-bold mb-2">Noclip Documentary: Developing Hell</h4>
+          <h4 class="font-serif text-xl font-bold mb-2">Noclip Videos (Hades Production Cycle)</h4>
           <p class="font-body text-xs leading-relaxed text-justify text-neutral-700 mb-3">
-            Studied Noclip's documentary series on <em>Hades</em>'s production pipeline—specifically how modular room encounters and reusable environmental interactions prevent the "Single-Threaded Production" content treadmill.
+            Watched Noclip's documentary series on how Supergiant built and shipped <em>Hades</em> during Early Access, comparing their modular production pipeline against the single-threaded content treadmill that hurt episodic studios.
           </p>
           <a href="https://www.youtube.com/playlist?list=PL-THgg8QnvU4JEVov1tMlFThNKrDh3Jw" target="_blank" rel="noopener" class="font-mono text-xs font-bold text-[#111111] underline-offset-4 decoration-2 decoration-[#CC0000] hover:underline">
-            youtube.com // Noclip Series &rarr;
+            youtube.com // Noclip Hades Series &rarr;
           </a>
         </div>
 
         <div class="col-span-12 md:col-span-4 border-r border-b border-[#111111] p-5 bg-[#F9F9F7] hard-shadow-hover">
-          <div class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold mb-1">SOURCE 03 // ITEM SYNERGIES</div>
-          <h4 class="font-serif text-xl font-bold mb-2">The Binding of Isaac (Combinatorics)</h4>
+          <div class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold mb-1">SOURCE 03 // SYNERGY SYSTEM</div>
+          <h4 class="font-serif text-xl font-bold mb-2">The Binding of Isaac</h4>
           <p class="font-body text-xs leading-relaxed text-justify text-neutral-700 mb-3">
-            Deconstructed how <em>The Binding of Isaac</em> mutates base tear projectiles when combined with passive items—directly inspiring the Question #3 <strong>Kunai + Water</strong> and <strong>2x Multiplying Missile (1s cooldown)</strong> system.
+            Used <em>The Binding of Isaac</em> as the reference for how roguelike item synergies work—where your starter attack doesn't stay your main build and combining upgrades creates brand-new weapon behavior (like Kunai + Water or 2x Missiles).
           </p>
           <a href="https://bindingofisaacrebirth.fandom.com/wiki/Synergies" target="_blank" rel="noopener" class="font-mono text-xs font-bold text-[#111111] underline-offset-4 decoration-2 decoration-[#CC0000] hover:underline">
-            Binding of Isaac Synergy Wiki &rarr;
+            Binding of Isaac Synergies &rarr;
           </a>
         </div>
 
         <div class="col-span-12 md:col-span-4 border-r border-b border-[#111111] p-5 bg-[#F9F9F7] hard-shadow-hover">
-          <div class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold mb-1">SOURCE 04 // EPISODIC ENGINE</div>
-          <h4 class="font-serif text-xl font-bold mb-2">Telltale Games Website &amp; Tool</h4>
+          <div class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold mb-1">SOURCE 04 // STORY MODE CASE STUDY</div>
+          <h4 class="font-serif text-xl font-bold mb-2">Telltale's Website &amp; Studio History</h4>
           <p class="font-body text-xs leading-relaxed text-justify text-neutral-700 mb-3">
-            Researched Telltale's episodic business model, the proprietary <strong>Telltale Tool</strong> engine for multi-device mobile/tablet ports, licensed IP cross-promotion (<em>The Walking Dead, Batman, Borderlands</em>), and the free Episode 1 hook.
+            Used Telltale's website and history for my Obsidian notes on the <strong>Telltale Tool</strong> engine, cross-promotion with licensed IPs (<em>The Walking Dead, The Wolf Among Us, Batman, Borderlands</em>), and the "First Taste is Free" Episode 1 strategy.
           </p>
           <a href="https://telltale.com/" target="_blank" rel="noopener" class="font-mono text-xs font-bold text-[#111111] underline-offset-4 decoration-2 decoration-[#CC0000] hover:underline">
-            telltale.com // Studio Archive &rarr;
+            telltale.com &rarr;
           </a>
         </div>
 
         <div class="col-span-12 md:col-span-4 border-r border-b border-[#111111] p-5 bg-[#F9F9F7] hard-shadow-hover">
-          <div class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold mb-1">SOURCE 05 // PLAYER SENTIMENT</div>
-          <h4 class="font-serif text-xl font-bold mb-2">Reddit &amp; Twitter (X) Communities</h4>
+          <div class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold mb-1">SOURCE 05 // PLAYER DISCUSSIONS</div>
+          <h4 class="font-serif text-xl font-bold mb-2">Reddit &amp; Twitter (X)</h4>
           <p class="font-body text-xs leading-relaxed text-justify text-neutral-700 mb-3">
-            Gathered player retention complaints across <code>r/Survivorio</code>, <code>r/roguelikes</code>, and <code>r/TheWalkingDeadGame</code> regarding repetitive late-game builds and immersion-breaking diamond choices in mobile story apps.
+            Read player posts on Reddit and Twitter about why <em>Survivor.io</em> gets repetitive when runs feel the same, why <em>Hades</em>'s Heat system works, and why paywalled diamond choices ruin mobile story games.
           </p>
           <a href="https://www.reddit.com/r/Survivorio/" target="_blank" rel="noopener" class="font-mono text-xs font-bold text-[#111111] underline-offset-4 decoration-2 decoration-[#CC0000] hover:underline">
-            reddit.com/r/Survivorio &rarr;
+            Reddit &amp; Twitter Research &rarr;
           </a>
         </div>
 
         <div class="col-span-12 md:col-span-4 border-r border-b border-[#111111] p-5 bg-[#F9F9F7] hard-shadow-hover">
-          <div class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold mb-1">SOURCE 06 // PROTOTYPE &amp; VALUES</div>
-          <h4 class="font-serif text-xl font-bold mb-2">Buckshot Roulette &amp; LILA Values Deck</h4>
+          <div class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold mb-1">SOURCE 06 // VISUALS, AUDIO &amp; VALUES</div>
+          <h4 class="font-serif text-xl font-bold mb-2">Buckshot Roulette, Persona &amp; LILA Deck</h4>
           <p class="font-body text-xs leading-relaxed text-justify text-neutral-700 mb-3">
-            Used <em>Buckshot Roulette</em> as the visual benchmark for <em>Spin to Lose</em> (4–6 band posterization, fixed first-person POV, backlit silhouette) alongside LILA Games' <em>Business Values</em> PDF (Wartime Orientation &amp; North Star Metrics).
+            Used <em>Buckshot Roulette</em> as the visual reference for <em>Spin to Lose</em>, <em>Persona</em> for the BGM (<em>It's Going Down Now</em>), and LILA Games' <em>Business Values</em> PDF for the Soft/Hard Launch North Star Metrics.
           </p>
           <span class="font-mono text-xs font-bold text-neutral-500">
-            SpinToLose_GameJam_Playbook.docx // LILA Values.pdf
+            SpinToLose_GameJam_Playbook.docx // LILA Games Values.pdf
           </span>
         </div>
       </div>
@@ -1316,22 +1301,21 @@
   </main>
 
   <!-- =========================================================
-       NEWSPAPER COLOPHON FOOTER
+       FOOTER
        ========================================================= -->
   <footer class="border-t-4 border-[#111111] bg-[#F9F9F7] py-8">
     <div class="max-w-screen-xl mx-auto px-4 flex flex-wrap justify-between items-center gap-4 font-mono text-xs uppercase tracking-widest text-neutral-600">
-      <div>EDITION: VOL 1.0 // PRINTED IN BENGALURU, INDIA FOR LILA GAMES</div>
-      <div>CANDIDATE: RYAN JOSHY // GAME DESIGNER WRITTEN ASSESSMENT</div>
-      <div>CONTRAST: AAA (&gt;17:1) // CORNERS: 0PX</div>
+      <div>WRITTEN TEST PART 1 // SUBMITTED FOR LILA GAMES</div>
+      <div>RYAN JOSHY // BENGALURU, INDIA</div>
+      <div>UNITY URP WEBGL + OBSIDIAN VAULT ("RE-COLLECTION")</div>
     </div>
   </footer>
 
-  <!-- Official YouTube IFrame API (Fallback if local MP3 is not in folder) -->
   <script src="https://www.youtube.com/iframe_api"></script>
 
   <script>
     /* =========================================================
-       1. SECTION TAB SWITCHING & FULL BROADSHEET PRINT MODE
+       1. SECTION TAB SWITCHING & FULL PAGE MODE
        ========================================================= */
     let currentSection = 0;
     let broadsheetAllMode = false;
@@ -1341,7 +1325,7 @@
       if (broadsheetAllMode) {
         broadsheetAllMode = false;
         document.body.classList.remove('broadsheet-all-mode');
-        document.getElementById('broadsheet-mode-btn').innerText = '[ PRINT MODE: FULL BROADSHEET ]';
+        document.getElementById('broadsheet-mode-btn').innerText = '[ SHOW ALL SECTIONS ON ONE PAGE ]';
       }
 
       document.querySelectorAll('.edition-section').forEach((sec, idx) => {
@@ -1363,11 +1347,11 @@
       broadsheetAllMode = !broadsheetAllMode;
       document.body.classList.toggle('broadsheet-all-mode', broadsheetAllMode);
       const btn = document.getElementById('broadsheet-mode-btn');
-      btn.innerText = broadsheetAllMode ? '[ VIEW MODE: SINGLE SECTION TABS ]' : '[ PRINT MODE: FULL BROADSHEET ]';
+      btn.innerText = broadsheetAllMode ? '[ VIEW SINGLE SECTION TABS ]' : '[ SHOW ALL SECTIONS ON ONE PAGE ]';
     }
 
     /* =========================================================
-       2. UNITY WEBGL BUILD LOADER (SPIN TO LOSE — Build/5fb80277808ce8dbfa45b3c9035657db)
+       2. UNITY WEBGL BUILD LOADER (SPIN TO LOSE)
        ========================================================= */
     let unityInstanceRef = null;
     let unityBooting = false;
@@ -1394,7 +1378,7 @@
         productVersion: '1.0'
       };
 
-      statusMsg.innerHTML = 'Mounting <code>' + loaderUrl + '</code>...';
+      statusMsg.innerHTML = 'Loading <code>' + loaderUrl + '</code>...';
       const script = document.createElement('script');
       script.src = loaderUrl;
       script.onload = () => {
@@ -1407,13 +1391,13 @@
             overlay.classList.add('hidden');
           }).catch((err) => {
             unityBooting = false;
-            statusMsg.innerHTML = 'Serve this folder over HTTP/HTTPS (e.g. GitHub Pages, Vercel, or VS Code Live Server) so Unity WebGL can stream <code>Build/6a27bd503262d275014bbb9ae16f792d.wasm.unityweb</code>.<br><span class="text-xs text-neutral-400">' + err + '</span>';
+            statusMsg.innerHTML = 'Make sure the <code>Build/</code> folder is pushed to GitHub (use <code>git add -f Build/</code> if ignored by .gitignore).<br><span class="text-xs text-neutral-400">' + err + '</span>';
           });
         }
       };
       script.onerror = () => {
         unityBooting = false;
-        statusMsg.innerHTML = 'Ensure the <code>Build/</code> folder from your Unity WebGL export is placed in the same directory as this <code>index.html</code> file.';
+        statusMsg.innerHTML = 'Make sure the <code>Build/</code> folder is in the same directory as <code>index.html</code> and pushed to GitHub (<code>git add -f Build/</code>).';
       };
       document.body.appendChild(script);
     }
@@ -1427,13 +1411,12 @@
       }
     }
 
-    // Automatically boot the Unity WebGL build on page load
     window.addEventListener('DOMContentLoaded', () => {
       bootUnityWebGL();
     });
 
     /* =========================================================
-       3. SINGLE-SONG AUDIO ENGINE ("It's Going Down Now.mp3")
+       3. AUDIO PLAYER ("It's Going Down Now.mp3")
        ========================================================= */
     const localAudio = document.getElementById('local-mp3-audio');
     let ytPlayer = null;
@@ -1449,13 +1432,13 @@
       const badge = document.getElementById('audio-status-badge');
       const playBtn = document.getElementById('ost-play-btn');
       if (isPlayingOst) {
-        badge.innerText = 'ON AIR';
+        badge.innerText = 'PLAYING';
         badge.className = 'bg-[#111111] text-white font-mono text-[10px] uppercase tracking-widest px-2 py-0.5 font-bold';
-        playBtn.innerText = 'PAUSE BGM';
+        playBtn.innerText = 'PAUSE SONG';
       } else {
         badge.innerText = 'PAUSED';
         badge.className = 'bg-[#CC0000] text-white font-mono text-[10px] uppercase tracking-widest px-2 py-0.5 font-bold';
-        playBtn.innerText = 'PLAY BGM';
+        playBtn.innerText = 'PLAY SONG';
       }
     }
 
@@ -1529,7 +1512,7 @@
     }
 
     /* =========================================================
-       4. Q2 INTERACTIVE 10/20 ENERGY & "DOLLARS" ECONOMY SIMULATOR
+       4. Q2 10/20 ENERGY & "DOLLARS" STORE TESTER
        ========================================================= */
     let currentEnergy = 20;
     const maxEnergy = 20;
@@ -1550,25 +1533,25 @@
     function simPlayEpisode() {
       const feedback = document.getElementById('econ-feedback-lbl');
       if (currentEnergy < 10) {
-        feedback.innerText = 'DEPLETED: WATCH OPT-IN AD OR BUY REFILL';
+        feedback.innerText = 'OUT OF ENERGY: WATCH OPT-IN AD OR BUY REFILL';
         return;
       }
       currentEnergy -= 10;
       currentDollars += 5;
       renderEnergyHUD();
-      feedback.innerText = 'EPISODE COMPLETE (-10 ENERGY | +\$5 F2P REWARD)';
+      feedback.innerText = 'EPISODE COMPLETED (-10 ENERGY | +\$5 F2P REWARD)';
     }
 
     function simWatchOptInAd() {
       currentEnergy = Math.min(maxEnergy, currentEnergy + 1);
       renderEnergyHUD();
-      document.getElementById('econ-feedback-lbl').innerText = 'OPT-IN VIDEO AD (+1 ENERGY | 0% FORCED ADS)';
+      document.getElementById('econ-feedback-lbl').innerText = 'OPT-IN VIDEO AD (+1 ENERGY BAR | 0% FORCED ADS)';
     }
 
     function simBuyRefill() {
       const feedback = document.getElementById('econ-feedback-lbl');
       if (currentDollars < 15) {
-        feedback.innerText = 'INSUFFICIENT DOLLARS (\$15 REQUIRED)';
+        feedback.innerText = 'NOT ENOUGH DOLLARS (\$15 NEEDED)';
         return;
       }
       currentDollars -= 15;
@@ -1580,7 +1563,7 @@
     function buyStoreItem(itemName, cost) {
       const feedback = document.getElementById('econ-feedback-lbl');
       if (currentDollars < cost) {
-        feedback.innerText = `NEED $${cost} FOR ${itemName.toUpperCase()} (COMPLETE EPISODES OR TOP UP)`;
+        feedback.innerText = `NEED $${cost} FOR ${itemName.toUpperCase()}`;
         return;
       }
       currentDollars -= cost;
@@ -1591,18 +1574,18 @@
     renderEnergyHUD();
 
     /* =========================================================
-       5. Q3 INTERACTIVE WIREFRAME DRAFT SIMULATOR
+       5. Q3 WIREFRAME UPGRADE TESTER
        ========================================================= */
     const upgradePools = [
       [
-        { code: 'H2O', title: 'WATER ELEMENT', badge: '+ SYNERGY!', isSynergy: true, desc: 'Fuses with your equipped Kunai to unlock "Silent Water Kunai" (+2 Piercing & Slowing Water Puddles).' },
-        { code: '2xM', title: 'MULTIPLYING MISSILES', badge: 'HIGH DPS', isSynergy: false, desc: 'Doubles projectiles after every hit! Stops for 1.0s as a cooldown.' },
-        { code: 'AOE', title: 'FIRE AFFINITY', badge: 'AOE', isSynergy: false, desc: 'Adds explosive area-of-effect burn damage to physical attacks.' }
+        { code: 'H2O', title: 'WATER ELEMENT', badge: '+ SYNERGY!', isSynergy: true, desc: 'Fuses with your weapons to add Piercing and Slow (Kunai + Water = "Silent Water Kunai").' },
+        { code: '2xM', title: 'MULTIPLYING MISSILES', badge: 'HIGH DPS', isSynergy: false, desc: 'Doubles projectiles after every hit! Cooldown: 1s.' },
+        { code: 'AOE', title: 'FIRE AFFINITY', badge: 'AOE', isSynergy: false, desc: 'Adds explosive AoE damage to attacks.' }
       ],
       [
-        { code: 'DPS', title: 'SINGLE-STRIKE THROWABLE', badge: 'HIGH DPS', isSynergy: false, desc: 'High-DPS single-strike throwable build for melting boss targets.' },
-        { code: 'VLT', title: 'LIGHTNING ELEMENT', badge: '+ SYNERGY!', isSynergy: true, desc: 'Electrifies your slowing Water Kunai puddles to stun-lock the horde.' },
-        { code: 'WND', title: 'WIND ELEMENT', badge: 'CONTROL', isSynergy: false, desc: 'Pushes enemies back into your active elemental hazard zones.' }
+        { code: 'DPS', title: 'SINGLE-STRIKE THROWABLE', badge: 'HIGH DPS', isSynergy: false, desc: 'High-DPS single-strike throwable build.' },
+        { code: 'VLT', title: 'LIGHTNING ELEMENT', badge: '+ SYNERGY!', isSynergy: true, desc: 'Combines with your Water puddles to shock enemies across the floor.' },
+        { code: 'WND', title: 'WIND ELEMENT', badge: 'CONTROL', isSynergy: false, desc: 'Pushes enemies back into your slowing water puddles.' }
       ]
     ];
     let currentPoolIdx = 0;
@@ -1634,11 +1617,11 @@
     function rerollWireframePool() {
       currentPoolIdx = (currentPoolIdx + 1) % upgradePools.length;
       renderWireframeCards();
-      document.getElementById('wf-status-text').innerText = 'POOL REROLLED (-100 GEMS)';
+      document.getElementById('wf-status-text').innerText = 'REROLLED (-100 GEMS)';
     }
 
     function selectWireframeUpgrade(title) {
-      document.getElementById('wf-status-text').innerText = `DRAFTED: [${title}]`;
+      document.getElementById('wf-status-text').innerText = `SELECTED: [${title}]`;
     }
 
     renderWireframeCards();
@@ -1649,99 +1632,117 @@
     const obsidianNotes = [
       {
         title: "Question 3 Design Specification",
-        words: "1 BACKLINK // 346 WORDS // 2,149 CHARS",
+        words: "1 BACKLINK // 346 WORDS // 2,149 CHARACTERS",
         html: `
-          <div class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold mb-1">OBSIDIAN NOTE // 01</div>
+          <div class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold mb-1">RE-COLLECTION VAULT // NOTE 01</div>
           <h3 class="font-serif text-2xl font-bold text-[#111111] border-b border-[#111111] pb-2 mb-3">Question 3 Design Specification</h3>
           <div class="font-body text-sm leading-relaxed text-neutral-800 space-y-3 text-justify">
-            <p class="font-mono text-xs text-neutral-500">Status: draft // Linked to [[Roguelike game analysis]]</p>
+            <p class="font-mono text-xs text-neutral-500">draft</p>
             <h4 class="font-serif font-bold text-lg text-[#111111]">True Roguelike Synergy Builds</h4>
-            <p><strong>Why this feature?</strong> If we take a game like <em>Survivor.io</em>, the gameplay can get boring pretty fast because you're mostly just dodging and running while the combat is fully automated. To fix that, I would honestly lean heavily into a true roguelike combat system. Every run needs to feel completely new. If the player starts with a base weapon, we should make it so no two builds ever end up exactly the same.</p>
-            <p><strong>How the Build System Works:</strong> Let's say you go for a throwable build. You pick your starter weapon, like a Kunai, which gives you a basic throwing base attack. But the best part about roguelikes is that your starting weapon doesn't always have to end up being your main damage dealer.</p>
-            <p>Instead of just getting basic stat boosts, you might stumble into an overpowered missile cast that doubles its projectiles after every hit, balanced by a strict 1-second cooldown. Or, you could just lean into a high-DPS, single-strike throwable build.</p>
+            <p><strong>Why this feature?</strong> If we take a game like <em>Survivor.io</em>, the gameplay can get boring pretty fast because you're mostly just dodging and running while the combat is fully automated. To fix that, I would honestly lean heavily into a true roguelike combat system. Every run needs to feel completely new. If the player starts with a base weapon, we should make it so no two builds ever end up exactly the same. Adding that massive layer of randomness and build variety keeps players engaged way longer, especially when the base survival loop starts feeling stale.</p>
+            <p><strong>How the Build System Works</strong> Let's say you go for a throwable build. You pick your starter weapon, like a Kunai, which gives you a basic throwing base attack. But the best part about roguelikes is that your starting weapon doesn't always have to end up being your main damage dealer.</p>
+            <p>Instead of just getting basic stat boosts, you might stumble into an overpowered missile cast that doubles its projectiles after every hit, balanced by a strict 1-second cooldown. Or, you could just lean into a high-DPS, single-strike throwable build. Because the upgrade pool adapts to what you pick, the possibilities are endless.</p>
+            <p><strong>Detailed Design: The Elemental Synergy System</strong> To make characters even more versatile, I'd implement a system where elements interact directly with your physical weapons to create brand-new mechanics mid-run.</p>
+            <p>• <strong>The Draft Mechanics:</strong> When leveling up, the game doesn't just offer random weapons; it offers elements (Water, Fire, Lightning) that can fuse with what you already have.</p>
+            <p>• <strong>Example Build – "The Silent Water Kunai":</strong> If you start with the Kunai and later draft a Water element, they combine.</p>
           </div>
         `
       },
       {
         title: "Roguelike game analysis",
-        words: "1 BACKLINK // 225 WORDS // 1,209 CHARS",
+        words: "1 BACKLINK // 225 WORDS // 1,209 CHARACTERS",
         html: `
-          <div class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold mb-1">OBSIDIAN NOTE // 02</div>
-          <h3 class="font-serif text-2xl font-bold text-[#111111] border-b border-[#111111] pb-2 mb-3">Roguelike game analysis (Hades)</h3>
+          <div class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold mb-1">RE-COLLECTION VAULT // NOTE 02</div>
+          <h3 class="font-serif text-2xl font-bold text-[#111111] border-b border-[#111111] pb-2 mb-3">Roguelike game analysis</h3>
           <div class="font-body text-sm leading-relaxed text-neutral-800 space-y-3 text-justify">
-            <p class="font-mono text-xs text-[#CC0000]">[[Question 3 Design Specification]] // [[Lila games case study]]</p>
-            <p><strong>HADES:</strong> Hades gives you more tools, but it also allows you to choose your own difficulty at a very granular level as well, and that's built into the progression system.</p>
-            <p>Once you've defeated the final boss once, you unlock the <strong>"Pact of Punishment"</strong> which adds <strong>"Heat"</strong> to a run. Heat is added by choosing options that increase the difficulty, and can go from zero to 57, with the current record being 52 - IIRC, so the game is as difficult as you want it to be.</p>
+            <p class="font-mono text-xs text-[#CC0000]">[[Question 3 Design Specification]]</p>
+            <p><strong>HADES</strong></p>
+            <p>Hades gives you more tools, but it also allows you to choose your own difficulty at a very granular level as well, and that's built into the progression system.</p>
+            <p>Once you've defeated the final boss once, you unlock the "Pact of Punishment" which adds "Heat" to a run. Heat is added by choosing options that increase the difficulty, and can go from zero to 57, with the current record being 52 - IIRC, so the game is as difficult as you want it to be.</p>
             <p>The core changes to your abilities can be refunded, so you start fresh, and while you must use both a "Keepsake" and a "Companion" (a.k.a. a Summon) you can choose a low impact "Keepsake" and never have to use your summon.</p>
+            <p>The only other upgrade that is permanent is upgrading the effectiveness of your starting weapons, which IIRC, there's one quest that asks you to do that.</p>
             <p>Basically thou', the game forces you to play on higher difficulty for upgrade currencies unless you want a stupid long grind ahead of you.</p>
+            <p>Hades both gives you more tools and then matches it with greater difficulty.</p>
           </div>
         `
       },
       {
         title: "telltale studio analysis",
-        words: "1 BACKLINK // 402 WORDS // 2,628 CHARS",
+        words: "1 BACKLINK // 402 WORDS // 2,628 CHARACTERS",
         html: `
-          <div class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold mb-1">OBSIDIAN NOTE // 03</div>
+          <div class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold mb-1">RE-COLLECTION VAULT // NOTE 03</div>
           <h3 class="font-serif text-2xl font-bold text-[#111111] border-b border-[#111111] pb-2 mb-3">telltale studio analysis</h3>
           <div class="font-body text-sm leading-relaxed text-neutral-800 space-y-3 text-justify">
-            <p><strong>The Tale of Icarus — The Rise and Fall of Telltale:</strong> Dividing games into periodically released "episodes" that were later bundled into "seasons" — the studio created its own proprietary game engine, <strong>the Telltale Tool</strong>.</p>
-            <p><strong>Cross-Promotion &amp; Strategic Timing:</strong> Rather than spending millions trying to build brand awareness for original characters, Telltale aggressively licensed some of the biggest entertainment properties in the world (<em>The Walking Dead, The Wolf Among Us, Tales from the Borderlands, Batman</em>) and timed episode releases with TV hype cycles.</p>
+            <p><strong>**the tale of Icarus - the rise and fall of telltale**</strong></p>
+            <p>dividing games into periodically released "episodes" that were later bundled into "seasons" — the studio created its own proprietary game engine, <strong>the Telltale Tool</strong>.</p>
+            <p>The Wolf Among Us / Tales from the Borderlands / Batman: The Telltale Series / Game of Thrones / Minecraft: Story Mode</p>
+            <p>The studio is also known for revolutionizing current gaming business models by taking an episodic approach to its releases. Rather than spending millions trying to build brand awareness for original characters, Telltale aggressively licensed some of the biggest entertainment properties in the world.</p>
+            <p>• <strong>Cross-Promotion:</strong> The IP essentially did the top-of-funnel marketing for them. A fan of <em>The Walking Dead</em> TV show might not be a hardcore gamer, but they would buy the game simply because of the brand attached to it.</p>
+            <p>• <strong>Strategic Timing:</strong> They often timed episode releases to coincide with the hype cycles of the TV shows or movies they were based on.</p>
+            <p><strong>Highly Watchable:</strong> Because Telltale games were essentially interactive movies with minimal complex gameplay, great for content creators. Social Proof: At the end of every episode.</p>
             <p><strong>"First Taste is Free" Pricing Strategy:</strong> Once players were emotionally invested in the story and characters after two hours of free gameplay, a high percentage would convert and purchase the "Season Pass" to finish the story.</p>
+            <p><strong>Telltale tool:</strong> Telltale built their proprietary game engine (the Telltale Tool) specifically so they could port their games to almost any device instantly. By making the game available on iPads and smartphones, they marketed to casual audiences who would never buy a dedicated gaming console.</p>
           </div>
         `
       },
       {
         title: "why telltale doesnt work as f2p mobile game",
-        words: "1 BACKLINK // 522 WORDS // 3,703 CHARS",
+        words: "1 BACKLINK // 522 WORDS // 3,703 CHARACTERS",
         html: `
-          <div class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold mb-1">OBSIDIAN NOTE // 04</div>
+          <div class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold mb-1">RE-COLLECTION VAULT // NOTE 04</div>
           <h3 class="font-serif text-2xl font-bold text-[#111111] border-b border-[#111111] pb-2 mb-3">why telltale doesnt work as f2p mobile game</h3>
           <div class="font-body text-sm leading-relaxed text-neutral-800 space-y-3 text-justify">
-            <p><strong>1. The "Single-Threaded Production" Content Treadmill:</strong> Traditional Telltale games relied on custom-animated cinematic cutscenes, full voice acting, and branching storyboards. Pre-rendering 2-hour episodes every month is economically unsustainable in F2P.</p>
-            <p><strong>2. The "Diamond Choice" Illusion Breaks Drama:</strong> Casual visual novels monetize by gating the best outcome behind hard paywalls. If a Telltale-style moral dilemma ("Save Carley or Doug") had an option that read <em>[Spend 30 Gems: Save Both]</em>, the entire dramatic integrity vanishes instantly.</p>
-            <p><strong>3. High Churn and Zero Social Loop:</strong> Telltale games were played once or watched on YouTube. Mobile F2P thrives on daily retention loops, weapon/outfit collection mechanics, and high-frequency interaction.</p>
+            <h4 class="font-serif font-bold text-lg text-[#111111]">Why the Traditional Telltale Formula Fails in Mobile F2P</h4>
+            <p><strong>1. The "Single-Threaded Production" Content Treadmill</strong></p>
+            <p>• Traditional Telltale games relied on custom-animated cinematic cutscenes, full voice acting, and branching storyboards. In a live-service F2P model, content velocity is survival.</p>
+            <p>• Pre-rendering or animating 2-hour episodes every month is economically unsustainable unless a studio is generating massive revenue per user—something standard single-player narratives struggle to achieve.</p>
+            <p><strong>2. The "Diamond Choice" Illusion Breaks Drama</strong></p>
+            <p>• Casual visual novels monetize by gating "the best outfit" or "the romantic climax" behind hard paywalls/gems.</p>
+            <p>• If a Telltale-style moral dilemma ("Save Carley or Doug") had an option that read: <em>[Spend 30 Gems: Save Both]</em>, the entire dramatic integrity and weight of consequence vanishes instantly. Pay-to-win morality turns intense drama into cheap melodrama.</p>
+            <p><strong>3. High Churn and Zero Social Loop</strong></p>
+            <p>• Telltale games were played once, watched on YouTube, or completed in a single weekend.</p>
+            <p>• Mobile F2P thrives on daily retention loops, social friction, asynchronous interaction, and collection mechanics—none of which exist in a strictly linear, closed cinematic narrative.</p>
           </div>
         `
       },
       {
         title: "Lila games case study",
-        words: "2 BACKLINKS // 310 WORDS // 1,890 CHARS",
+        words: "2 BACKLINKS // 310 WORDS",
         html: `
-          <div class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold mb-1">OBSIDIAN NOTE // 05</div>
+          <div class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold mb-1">RE-COLLECTION VAULT // NOTE 05</div>
           <h3 class="font-serif text-2xl font-bold text-[#111111] border-b border-[#111111] pb-2 mb-3">Lila games case study</h3>
           <div class="font-body text-sm leading-relaxed text-neutral-800 space-y-3 text-justify">
             <p>Notes from <code>LILA Games Values.pdf</code>:</p>
-            <p><strong>1. Wartime Orientation vs. Peacetime:</strong> Results &gt; Stability. Violate standard protocol (like submitting a static text file) to ship a playable product.</p>
-            <p><strong>2. Hedgehog Concept &amp; North Star Metrics:</strong> Focus teams on a single serial NSM: Soft Launch targets <strong>D1 Retention to 40%</strong> and <strong>Average Core Loop Actions to 8+ per day</strong>; Hard Launch shifts to <strong>Organic ARPDAU to $0.15</strong> and <strong>D7 ROAS to 20%</strong>.</p>
-            <p><strong>3. Optimism vs. Blind Positivity:</strong> Admit Problem &rarr; Root Cause Analysis &rarr; Deep Thinking &rarr; Find a Solution &rarr; Action Plan (actual work, not slides).</p>
+            <p>• <strong>Wartime Orientation vs. Peacetime:</strong> Results &gt; Stability.</p>
+            <p>• <strong>Hedgehog Concept &amp; North Star Metrics:</strong> Soft Launch focuses on D1 Retention to 40% and Average Core Loop Actions to 8+ per day. Hard Launch shifts to Organic ARPDAU to $0.15 and D7 ROAS to 20%.</p>
+            <p>• <strong>Optimism vs. Blind Positivity:</strong> Admit Problem &rarr; Root Cause Analysis &rarr; Deep Thinking &rarr; Find a Solution &rarr; Action Plan (Lots of task lists and actual work).</p>
           </div>
         `
       },
       {
         title: "Marketing F2P for telltale case study",
-        words: "1 BACKLINK // 280 WORDS // 1,640 CHARS",
+        words: "1 BACKLINK // 280 WORDS",
         html: `
-          <div class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold mb-1">OBSIDIAN NOTE // 06</div>
+          <div class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold mb-1">RE-COLLECTION VAULT // NOTE 06</div>
           <h3 class="font-serif text-2xl font-bold text-[#111111] border-b border-[#111111] pb-2 mb-3">Marketing F2P for telltale case study</h3>
           <div class="font-body text-sm leading-relaxed text-neutral-800 space-y-3 text-justify">
-            <p>Monetizing interactive narrative F2P without paywalling moral choices:</p>
-            <p>• 10/20 Energy Bar system per episode + Dual Currency ("Dollars").</p>
-            <p>• Reward F2P players with Dollars upon episode completion.</p>
-            <p>• Cosmetics (Professor outfit for Lee, new hoodie for Clementine), mix-and-match weapon skin packs across the whole game, and optional episode skips.</p>
-            <p>• Strictly zero forced ads during episodes—only opt-in video ads for +1 Energy Bar.</p>
+            <p>• Starting an episode costs 10 energy bars out of a maximum capacity of 20.</p>
+            <p>• Dual-currency system: energy bars + premium currency ("dollars"). Completing an episode rewards F2P players with a small amount of premium dollars.</p>
+            <p>• Cosmetics (full professor outfit for Lee, new hoodie for Clementine), weapon skin packs to mix and match loadouts across the entire game, and progression skips.</p>
+            <p>• No forced ads during episodes—strictly opt-in rewarded video ads for a free energy bar.</p>
           </div>
         `
       },
       {
         title: "Question 2 Gameplay Insights & Strategy",
-        words: "1 BACKLINK // 485 WORDS // 2,910 CHARS",
+        words: "1 BACKLINK // 485 WORDS",
         html: `
-          <div class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold mb-1">OBSIDIAN NOTE // 07</div>
+          <div class="font-mono text-xs uppercase tracking-widest text-[#CC0000] font-bold mb-1">RE-COLLECTION VAULT // NOTE 07</div>
           <h3 class="font-serif text-2xl font-bold text-[#111111] border-b border-[#111111] pb-2 mb-3">Question 2 Gameplay Insights &amp; Strategy</h3>
           <div class="font-body text-sm leading-relaxed text-neutral-800 space-y-3 text-justify">
-            <p>• Browsed the App Store top 100—all fast-paced high-dopamine slop.</p>
-            <p>• Keep the viewer on the edge of their seat every 2 minutes by cutting the 5-minute gap between Lee's 4 dialogue options in half with QTEs.</p>
-            <p>• Low budget scope: add environmental interactables &amp; weapon choices in guided linear rooms. High budget scope: QTEs that tailor the story and multiple endings.</p>
+            <p>• Every 2 minutes we keep the viewer on the edge of the seat by removing white-space filler scenes.</p>
+            <p>• Pacing &amp; QTEs: If Lee gets to choose from 4 options, instead of waiting 5 mins for another set to come up, cut that in half.</p>
+            <p>• Environmental Interactivity: Instead of increasing the explorable area, add more interactables for the main character (like weapon choices).</p>
           </div>
         `
       }
@@ -1749,13 +1750,13 @@
 
     let activeObsNote = 0;
     const graphNodes = [
-      { id: 0, label: "Q3 Design Spec", x: 225, y: 72, r: 8 },
-      { id: 6, label: "Q2 Strategy", x: 135, y: 100, r: 6 },
-      { id: 4, label: "Lila Case Study", x: 85, y: 175, r: 7.5 },
-      { id: 1, label: "Roguelike (Hades)", x: 255, y: 185, r: 8.5 },
-      { id: 2, label: "Telltale Analysis", x: 105, y: 275, r: 8 },
-      { id: 3, label: "Why F2P Fails", x: 175, y: 345, r: 7 },
-      { id: 5, label: "Marketing F2P", x: 245, y: 295, r: 6.5 }
+      { id: 0, label: "Question 3 Design Specification", x: 220, y: 72, r: 8 },
+      { id: 6, label: "Question 2 Gameplay Insights", x: 135, y: 105, r: 6 },
+      { id: 4, label: "Lila games case study", x: 85, y: 175, r: 7.5 },
+      { id: 1, label: "Roguelike game analysis", x: 255, y: 185, r: 8.5 },
+      { id: 2, label: "telltale studio analysis", x: 105, y: 275, r: 8 },
+      { id: 3, label: "why telltale doesnt work as f2p", x: 175, y: 345, r: 7 },
+      { id: 5, label: "Marketing F2P for telltale", x: 245, y: 295, r: 6.5 }
     ];
     const graphEdges = [[0, 1], [1, 4], [4, 2], [6, 2], [2, 3], [2, 5]];
 
@@ -1817,7 +1818,7 @@
         }
 
         gCtx.fillStyle = isSelected ? '#FFFFFF' : '#D4D4D8';
-        gCtx.font = isSelected ? 'bold 10px JetBrains Mono' : '10px JetBrains Mono';
+        gCtx.font = isSelected ? 'bold 9.5px JetBrains Mono' : '9.5px JetBrains Mono';
         gCtx.textAlign = 'center';
         gCtx.fillText(n.label, n.x, n.y + n.r + 14);
       });
